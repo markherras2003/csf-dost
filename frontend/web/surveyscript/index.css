@@ -1,0 +1,45 @@
+
+.btn-green {
+    background-color: #1ab394;
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .btn-red {
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .btn-red:hover, .btn-red:focus {
+      background-color: #cc0000;
+      color: #fff;
+  }
+  
+  .btn-green:hover, .btn-green:focus {
+      background-color: #18a689;
+      color: #fff;
+  }
+  
+  .panel-footer {
+      text-align: right;
+      background-color: #fff;
+  }
+
+  
+  div.surv {
+    height: 10em;
+    position: relative }
+div.survx {
+    width:75%;
+    margin: 0;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.panel-footer {
+    background-color:#ecf0f5 !important;
+}

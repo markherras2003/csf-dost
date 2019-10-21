@@ -33,7 +33,7 @@ $gridColumn = [
     ['class' => 'yii\grid\SerialColumn'],
     [
         'attribute' => 'user_id',
-        'label' => 'User',
+        'label' => 'User',              
         'value' => function($model) {
             return $model->user->username;
         },

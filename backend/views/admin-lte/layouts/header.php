@@ -43,7 +43,7 @@ if(Yii::$app->user->isGuest){
         </a>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li class="dropdown user user-menu">
+                <li  class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= $CurrentUserAvatar ?>" class="user-image" alt="User Image"/>
                         <span class="hidden-xs"><?= $CurrentUserName ?></span>
@@ -51,9 +51,7 @@ if(Yii::$app->user->isGuest){
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?= $CurrentUserAvatar ?>" class="img-circle"
-                                 alt="User Image"/>
-
+                            <img src="<?= $CurrentUserAvatar ?>" class="img-circle" alt="User Image"/>
                             <p>
                                 <?= $UsernameDesignation ?> 
                             </p>

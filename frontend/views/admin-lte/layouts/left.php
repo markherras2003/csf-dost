@@ -59,7 +59,7 @@ if(Yii::$app->user->isGuest){
                         //'url' => ['/settings'],
                         //'visible'=> Yii::$app->user->can('access-pre-procurement'),
                         'items' => [
-                            ['label' => 'Customer Satisfaction Feedback', 'icon' => 'line-chart', 'url' => ['/csf/index']],
+                            ['label' => 'Customer Satisfaction Feedback', 'icon' => 'line-chart', 'url' => ['/site/survey']],
                         ]
                     ],
                 

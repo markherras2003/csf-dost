@@ -69,6 +69,16 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+       /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionSurvey()
+    {
+        return $this->render('survey');
+    }
+
     /**
      * Login action.
      *
