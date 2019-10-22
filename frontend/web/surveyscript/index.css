@@ -40,6 +40,14 @@ div.survx {
     transform: translate(-50%, -50%) 
 }
 
+div.survx td::first-line{
+    text-align: left;
+}
+
+div.survx td{
+    text-align: center;
+}
+
 .panel-footer {
     background-color:#ecf0f5 !important;
 }
