@@ -277,7 +277,6 @@ class SiteController extends Controller
 
     public function actionSurvey()
     {
-      
             return $this->render('survey.html');
     }
 
