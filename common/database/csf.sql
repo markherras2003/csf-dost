@@ -438,21 +438,6 @@ CREATE TABLE `tbl_unit` (
 
 insert  into `tbl_unit`(`unit_id`,`division_id`,`code`,`name`) values (1,1,'','Office of the Regional Director'),(2,2,'','Supply Unit'),(3,2,'','Accounting Unit'),(4,2,'','Cashiering Unit'),(5,3,'','S&T Scholarships Unit'),(6,3,'','S&T Information Center'),(7,3,'','Information and Communication Technnology Unit'),(8,3,'','RSTL Office'),(9,3,'','Metrology and Calibration Laboratory'),(10,3,'','Chemical Testing Laboratory'),(11,3,'','Microbiological Testing Laboratory'),(12,4,'','Field Operations Services Office'),(13,4,'','PSTC-Zamboanga del Sur'),(14,4,'','PSTC-Zamboanga del Norte'),(15,4,'','PSTC-Zamboanga Sibugay'),(16,4,'','PSTC-Isabela Basilan'),(17,2,'','Human Resource and Development');
 
-/*Table structure for table `tbl_unit_type` */
-
-DROP TABLE IF EXISTS `tbl_unit_type`;
-
-CREATE TABLE `tbl_unit_type` (
-  `unit_type_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name_short` varchar(10) NOT NULL,
-  `name_long` varchar(20) NOT NULL,
-  PRIMARY KEY (`unit_type_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
-
-/*Data for the table `tbl_unit_type` */
-
-insert  into `tbl_unit_type`(`unit_type_id`,`name_short`,`name_long`) values (1,'piece','pieces'),(2,'pax','pax'),(3,'unit','units'),(4,'bottle','bottles'),(5,'vial','vials'),(6,'tube','tubes'),(7,'test tub','test tub'),(8,'tank','tanks'),(9,'set','sets'),(10,'service','services'),(11,'sack','sacks'),(12,'room','rooms'),(13,'roll','rolls'),(14,'rms','rms'),(15,'ream','reams'),(16,'pcs','pcs'),(17,'pax','pax'),(18,'pair','pairs'),(19,'pad','pads'),(20,'pack','packs'),(21,'mtr','mtrs'),(22,'meter','meters'),(23,'lot','lots'),(24,'loave','loaves'),(25,'liter','liters'),(26,'lit','lit'),(27,'lenght','lenght'),(28,'L','L'),(29,'kl','kls'),(30,'kit','kit'),(31,'kgs','kgs'),(32,'jar','jars'),(33,'gram','grams'),(34,'box','boxes'),(35,'can','cans'),(36,'gal','gallons'),(37,'qrt','qrt'),(38,'bag','bags');
-
 /*Table structure for table `tbl_upload_package` */
 
 DROP TABLE IF EXISTS `tbl_upload_package`;
