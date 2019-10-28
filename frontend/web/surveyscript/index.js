@@ -2,6 +2,13 @@ jQuery(document).ready(function ($) {
 
 var mainurl = '';
 
+if (window.location.host == "localhost")
+{
+    mainurl = '';
+}else{
+   mainurl =  '';
+}
+
 Survey.Survey.cssType = "bootstrap";
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
@@ -28,7 +35,6 @@ window.survey = new Survey.Model ( {
                   "PSTC-ZDN",
                   "PSTC-ZS",
                   "FOS/ZC/Isabela",
-
                ]
             }
          ]
