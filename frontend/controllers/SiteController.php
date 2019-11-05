@@ -277,7 +277,9 @@ class SiteController extends Controller
 
     public function actionSurvey()
     {
+            $this->layout=false;
             return $this->render('survey.html');
+            
     }
 
     public function actionInsertrecord()
