@@ -12,620 +12,195 @@ if (window.location.host == "localhost")
 Survey.Survey.cssType = "bootstrap";
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
-window.survey = new Survey.Model ( {
-   "pages":[
-      {
-         "name":"page1",
-         "elements":[
-            {
-               "type":"dropdown",
-               "name":"c1",
-               "title":"Choose Unit",
-               "isRequired":"true",
-               "colCount":"0",
-               "choices":[
-                  "HUMAN RESOURCES",
-                  "CASHIERING",
-                  "ACCOUNTING & BUDGETING",
-                  "S&T SCHOLARSHIP",
-                  "MAINTENANCE",
-                  "PURCHASING",
-                  "S&T INFORMATION CENTER",
-                  "PSTC-ZDS",
-                  "PSTC-ZDN",
-                  "PSTC-ZS",
-                  "FOS/ZC/Isabela",
-               ]
-            }
-         ]
-      },
-      {
-         "name":"page2",
-         "elements":[
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'HUMAN RESOURCES'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Quality of Human Resource Unit Services"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Efficiency of the Human Resource Unit services"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of delivery of services"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff handling your needs"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'CASHIERING'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Quality of Service"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Efficiency of Service"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff providing services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'ACCOUNTING & BUDGETING'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Quality of Service"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Efficiency of Service"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff providing services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'S&T SCHOLARSHIP'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Relevance of the Scholarship Policies to you"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Efficiency of the S&T Scholarship services"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of delivery of the services"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending your needs"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'MAINTENANCE'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Quality of maintenance service"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Safety of equipment and users"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of delivery"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff providing maintenance service"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'PURCHASING'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Quality Supplies / Materials / Equipments / Services"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Conformance to Specifications"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of delivery"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of Procurement Staff/Officer"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'S&T INFORMATION CENTER'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Relevance of Library collections"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Rate of retrieval of Library materials"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Conduciveness of Library Facilities"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending rendering the services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'PSTC-ZDS'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Applicability of the Intervention Rendered"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Innovativeness of the Intervention"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery of the service "
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending rendering the services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'PSTC-ZDN'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Applicability of the Intervention Rendered"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Innovativeness of the Intervention"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery of the service "
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending rendering the services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'PSTC-ZS'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Applicability of the Intervention Rendered"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Innovativeness of the Intervention"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery of the service "
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending rendering the services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
-            {
-               "type":"matrix",
-               "name":"q1",
-               "visibleIf":"{c1} = 'FOS/ZC/Isabela'",
-               "title":"{c1}",
-               "isRequired":"true",
-               "columns":[
-                  {
-                     "value":"5",
-                     "text":"Outstanding"
-                  },
-                  {
-                     "value":"4",
-                     "text":"Very Satisfactory"
-                  },
-                  {
-                     "value":"3",
-                     "text":"Satisfactory"
-                  },
-                  {
-                     "value":"2",
-                     "text":"Unsatisfactory"
-                  },
-                  {
-                     "value":"1",
-                     "text":"Poor"
-                  }
-               ],
-               "rows":[
-                  {
-                     "value":"one",
-                     "text":"Efficieny of the Training"
-                  },
-                  {
-                     "value":"two",
-                     "text":"Relevance of the Training"
-                  },
-                  {
-                     "value":"three",
-                     "text":"Timeliness of Delivery of the training"
-                  },
-                  {
-                     "value":"four",
-                     "text":"Attitude of staff attending rendering the services"
-                  },
-                  {
-                     "value":"five",
-                     "text":"Over-all Satisfaction"
-                  }
-               ]
-            },
+var json = {
+   //showProgressBar: "top",
+   goNextPageAutomatic: false,
+   showNavigationButtons: false,
 
-         ]
-      },
-      {
-         "name":"page3",
-         "elements":[
-            {
-               "type":"text",
-               "name":"Name",
-               "value":"ddada",
+   pages: [
+   
+
+   
+   
+       {
+           questions: [
                
-            },
-            {
-               "type":"comment",
-               "name":"Remarks",
-               "value":"dadad",
-            }
-         ]
-      },
+               {
+                   "type": "imagepicker",
+                   "name": "q1",
+                   "isRequired": true,
+                   "title": "Quality of Human Resource Unit Services",
+                   "choices": [
+                       {
+                           "value": "1",
+                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                       }, {
+                           "value": "2",
+                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                       }, {
+                           "value": "3",
+                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                      }, {
+                           "value": "4",
+                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                     }, {
+                           "value": "5",
+                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                    },
+                   ]
+               },
 
+
+           {
+            "type": "imagepicker",
+            "name": "q3",
+            "isRequired": true,
+               "visibleIf":"{c1} = 'CASHIERING'",
+               "title": "Timeliness of delivery of services",
+            "choices": [
+                {
+                    "value": "1",
+                    "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                }, {
+                    "value": "2",
+                    "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                }, {
+                    "value": "3",
+                    "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+               }, {
+                    "value": "4",
+                    "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+              }, {
+                    "value": "5",
+                    "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+             },
+            ]
+        },
+
+           ],
+
+       },
+       {
+         questions: [
+   
+            {
+               "type": "imagepicker",
+               "name": "q2",
+               "isRequired": true,
+               "title": "Efficiency of the Human Resource Unit services",
+               "choices": [
+                   {
+                       "value": "1",
+                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                   }, {
+                       "value": "2",
+                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                   }, {
+                       "value": "3",
+                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                  }, {
+                       "value": "4",
+                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                 }, {
+                       "value": "5",
+                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                },
+               ]
+           },
+
+     ]
+ },
+       {
+         questions: [
+   
+            {
+               "type": "imagepicker",
+               "name": "q3",
+               "isRequired": true,
+               "title": "Timeliness of delivery of services",
+               "choices": [
+                   {
+                       "value": "1",
+                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                   }, {
+                       "value": "2",
+                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                   }, {
+                       "value": "3",
+                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                  }, {
+                       "value": "4",
+                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                 }, {
+                       "value": "5",
+                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                },
+               ]
+           },
+     ]
+ },
+       {
+         questions: [
+   
+          {
+             "type":"text",
+             "name":"Name",
+             "value":"ddada",
+             
+          },
+          {
+             "type":"comment",
+             "name":"Remarks",
+             "value":"dadad",
+          }
+
+     ]
+ },
+
+       {
+         questions: [
+   
+          {
+             "type":"text",
+             "name":"Name",
+             "value":"ddada",
+             
+          },
+          {
+             "type":"comment",
+             "name":"Remarks",
+             "value":"dadad",
+          }
+
+     ]
+ },
+
+       {
+         questions: [
+   
+          {
+             "type":"text",
+             "name":"Name",
+             "value":"ddada",
+             
+          },
+          {
+             "type":"comment",
+             "name":"Remarks",
+             "value":"dadad",
+          }
+
+     ]
+ },
+   
+   
    ]
-}
-);
+};
+
+
+
+
+window.survey = new Survey.Model (json);
 
 survey.showQuestionNumbers = 'on';
 survey.onComplete.add(function(result) {
@@ -644,18 +219,12 @@ survey.onComplete.add(function(result) {
       data: { jsondata: datas },
       dataType: "text",
       beforeSend: function() {
-         //$("#insert").val('Connecting...');
       },
       success: function (data) {
-       //  alert(data);
-       //  if (data == 'success1') {
                   document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
                   setTimeout(() => {
                      window.location.href  = 'survey';
                   }, 5000);
-    //  }else{
-    //     alert('Error Saving');
-    //  }
       }
    });
 });
@@ -708,10 +277,22 @@ var footer = document.querySelector(".panel-footer")
 var cancelBtn = document.createElement("button");
 
 cancelBtn.onclick = function() {
-if (confirm("Do you want to cancel the survey?")) {
-//you code here
-alert("Stop Survey!!!")
-}
+   Swal.fire({
+      title: 'Are you sure',
+      text: "Are you sure you want to cancel Survey?",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes'
+   
+    }).then((result) => {
+      if (result.value) {
+         
+         window.location.href = 'survey';
+   
+      }
+    });
 }
 
 cancelBtn.innerHTML = "Cancel";
@@ -727,22 +308,21 @@ footer.appendChild(cancelBtn);
 
 
 $( document ).on( "click", ".openmode", function () {
-
+var mdata = $( this ).data( 'id' );
 Swal.fire({
    title: 'Are you sure?',
-   text: "You won't be able to revert this!",
-   icon: 'warning',
+   text: "You Selected :" + mdata,
+   icon: 'info',
    showCancelButton: true,
    confirmButtonColor: '#3085d6',
    cancelButtonColor: '#d33',
-   confirmButtonText: 'Yes, delete it!'
+   confirmButtonText: 'Yes'
+
  }).then((result) => {
    if (result.value) {
-     Swal.fire(
-       'Deleted!',
-       'Your file has been deleted.',
-       'success'
-     )
+      
+      window.location.href = 'startsurvey';
+
    }
  });
 

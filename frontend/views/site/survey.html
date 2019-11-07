@@ -7,6 +7,10 @@
     <script src="../surveyscript/jquery.js"></script>
     <script src="../surveyscript/survey.jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../surveyscript/icheck.js"></script>
+    <script src="../surveyscript/Sortable.js"></script>
+    <script src="../surveyscript/scroll.js"></script>
+    <script src="../surveyscript/surveyjs-widgets.js"></script>
     <link rel="stylesheet" href="../surveyscript/bootstrap.min.css">
     <link rel="stylesheet" href="../surveyscript/index.css">
     <link rel="stylesheet" href="../surveyscript/style.css">
@@ -14,14 +18,9 @@
 </head>
 
 <body>
-    <!--
-    <div class="surv">
-        <div class="survx">
-            <div id="surveyElement"></div>
-            <div id="surveyResult"></div>
-        </div>
-    </div>
-    -->
+    
+  
+    
 
 
     <div class="header-nav">
@@ -42,67 +41,69 @@
    
         <div class="col-md-12">
                 <div class="title-message">
-            <h3>Select any Functional Unit to Rate</h3>
+                        <h3>Select any Functional Unit to Rate</h3>
+                </div>
         </div>
    
 
                 <div class="tablet-content">
                     <div class="row">
                         <div class="col-md-3">
-                                <div class="openmode card" data-id="accounting" href="#openmode">
+                                <div class="openmode card" data-id="ACCOUNTING" href="#openmode">
                                         <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
                                 </div>
                         </div>
                         <div class="col-md-3">
-                                <div class="openmode card" data-id="cashiering" href="#openmode">
-                                        <img src="../surveyscript/images/icon_cashiering.jpg" alt="Cashieirng">
+                                <div class="openmode card" data-id="CASHIERING" href="#openmode">
+                                        <img src="../surveyscript/images/icon_cashiering.jpg" alt="Cashiering">
                                 </div>
                         </div>
                         <div class="col-md-3">
-                                <div class="openmode card" data-id="hr" href="#openmode">
-                                        <img src="../surveyscript/images/icon_hr.jpg" alt="Accounting">
+                                <div class="openmode card" data-id="HUMAN RESOURCES" href="#openmode">
+                                        <img src="../surveyscript/images/icon_hr.jpg" alt="HR">
                                 </div>
                         </div>
                         <div class="col-md-3">
-                                <div    class="openmode card" data-id="scholarship" href="#openmode">
+                                <div    class="openmode card" data-id="SCHOLARSHIP" href="#openmode">
                                         <img src="../surveyscript/images/icon_sholarship.jpg" alt="Scholarship">
                                 </div>
                         </div>
                         <div class="col-md-3">
-                                <div class="openmode card" data-id="accounting" href="#openmode">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
+                                <div class="openmode card" data-id="MAINTENANCE" href="#openmode">
+                                        <img src="../surveyscript/images/icon_MAINTENANCE.jpg" alt="MAINTENANCE">
                                 </div>
                         </div>
+       
                         <div class="col-md-3">
-                                <div class="openmode card" data-id="accounting" href="#openmode">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
-                                </div>
-                        </div>
-                        <div class="col-md-3">
-                                <div class="card">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
+                                <div class="openmode card" data-id="PSTC-ZS" href="#openmode">
+                                        <img src="../surveyscript/images/icon_PURCHASING.jpg" alt="PURCHASING">
                                 </div>
                         </div>
                         <div class="col-md-3">
                                 <div class="card">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
+                                        <img src="../surveyscript/images/icon_STIC.jpg" alt="STIC">
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                                <div class="card">
+                                        <img src="../surveyscript/images/icon_FOS.jpg" alt="FOS-ZC">
                                 </div>
                         </div>
                         <div class="col-md-4">
-                                <div class="card">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
+                                <div class="openmode card" data-id="PSTC-ZDS" href="#openmode">
+                                        <img src="../surveyscript/images/icon_PSTC-ZDS.jpg" alt="Accounting">
+                                </div>
+                        </div>      
+                        <div class="col-md-4">
+                                <div class="openmode card" data-id="PSTC-ZDN" href="#openmode">
+                                        <img src="../surveyscript/images/icon_PSTC-ZDN.jpg" alt="PSTC-ZDN">
                                 </div>
                         </div>
                         <div class="col-md-4">
-                                <div class="card">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
+                                <div class="openmode card" data-id="PSTC-ZS" href="#openmode">
+                                        <img src="../surveyscript/images/icon_PSTC-ZS.jpg" alt="PSTC-                                                           ">
                                 </div>
-                        </div>
-                        <div class="col-md-4">
-                                <div class="card">
-                                        <img src="../surveyscript/images/icon_accounting.jpg" alt="Accounting">
-                                </div>
-                        </div>
+                        </div>   
 
                     </div>
                 </div>

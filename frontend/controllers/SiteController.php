@@ -282,6 +282,14 @@ class SiteController extends Controller
             
     }
 
+    
+    public function actionStartsurvey()
+    {
+            $this->layout=false;
+            return $this->render('startsurvey.html');
+            
+    }
+
     public function actionInsertrecord()
     {    
         //header("Access-Control-Allow-Origin: *");
