@@ -6,6 +6,8 @@ body {
      background: #3b5998;
      height: 100px;
      width: 100%;
+     z-index: 99999999999999999999999999999999;
+     position: sticky;
  }
 
  .header-nav .logo {
@@ -57,6 +59,7 @@ body {
       padding:6px;
       padding-left: 0px;  
       color: #ffffff;
+      z-index: 99999999999999999999999999999;
   }
   div.title-message {
       text-align: center;

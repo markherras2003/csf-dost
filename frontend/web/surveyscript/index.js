@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
 var mainurl = '';
-
+//localStorage["myJson"]="";
 if (window.location.host == "localhost")
 {
     mainurl = '';
@@ -10,17 +10,23 @@ if (window.location.host == "localhost")
 }
 
 Survey.Survey.cssType = "bootstrap";
+Survey.showQuestionNumbers = "off";
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
+alert(localStorage["myJson"]);
+if (localStorage["myJson"]=="HUMAN RESOURCES")
+
 
 var json = {
-   //showProgressBar: "top",
    goNextPageAutomatic: false,
    showNavigationButtons: false,
-
+   showQuestionNumbers: "",
+   requiredText: "",
+   
    pages: [
    
-
-   
+{
+    c1: localStorage["myJson"],
+},
    
        {
            questions: [
@@ -50,13 +56,17 @@ var json = {
                    ]
                },
 
+           ],
 
-           {
+       },
+        {  
+       questions : [
+
+        {
             "type": "imagepicker",
-            "name": "q3",
+            "name": "q2",
             "isRequired": true,
-               "visibleIf":"{c1} = 'CASHIERING'",
-               "title": "Timeliness of delivery of services",
+               "title": "Efficiency of the Human Resource Unit Service",
             "choices": [
                 {
                     "value": "1",
@@ -77,39 +87,8 @@ var json = {
             ]
         },
 
-           ],
-
-       },
-       {
-         questions: [
-   
-            {
-               "type": "imagepicker",
-               "name": "q2",
-               "isRequired": true,
-               "title": "Efficiency of the Human Resource Unit services",
-               "choices": [
-                   {
-                       "value": "1",
-                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
-                   }, {
-                       "value": "2",
-                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
-                   }, {
-                       "value": "3",
-                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
-                  }, {
-                       "value": "4",
-                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
-                 }, {
-                       "value": "5",
-                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
-                },
-               ]
-           },
-
-     ]
- },
+       ]
+    },
        {
          questions: [
    
@@ -117,7 +96,37 @@ var json = {
                "type": "imagepicker",
                "name": "q3",
                "isRequired": true,
-               "title": "Timeliness of delivery of services",
+               "title": "Timeliness of Delivery of services",
+               "choices": [
+                   {
+                       "value": "1",
+                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                   }, {
+                       "value": "2",
+                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                   }, {
+                       "value": "3",
+                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                  }, {
+                       "value": "4",
+                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                 }, {
+                       "value": "5",
+                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                },
+               ]
+           },
+
+     ]
+ },
+       {
+         questions: [
+   
+            {
+               "type": "imagepicker",
+               "name": "q4",
+               "isRequired": true,
+               "title": "Attitude of staff handling your needs",
                "choices": [
                    {
                        "value": "1",
@@ -139,63 +148,78 @@ var json = {
            },
      ]
  },
+ {
+    questions: [
+
        {
+          "type": "imagepicker",
+          "name": "q5",
+          "isRequired": true,
+          "title": "Over-all Satisfaction",
+          "choices": [
+              {
+                  "value": "1",
+                  "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+              }, {
+                  "value": "2",
+                  "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+              }, {
+                  "value": "3",
+                  "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+             }, {
+                  "value": "4",
+                  "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+            }, {
+                  "value": "5",
+                  "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+           },
+          ]
+      },
+]
+
+
+ },
+
+ {
+    questions: [
+
+     {
+        "type":"text",
+        "name":"Name",
+        "value":"ddada",
+        
+     },
+     {
+        "type":"comment",
+        "name":"Remarks",
+        "value":"dadad",
+     }
+
+]
+},
+
+ {
          questions: [
    
-          {
-             "type":"text",
-             "name":"Name",
-             "value":"ddada",
-             
-          },
-          {
-             "type":"comment",
-             "name":"Remarks",
-             "value":"dadad",
-          }
+            {
+                type: "html",
+                name: "info",
+                html: "<a id='surveyComplete2' href='#' onclick='survey.completeLastPage();' class='ui-link' style='display: inline;'><img src='../surveyscript/images/survey_button.png' height='100' width='100' alt=''></a>"
+
+            },
 
      ]
  },
 
-       {
-         questions: [
-   
-          {
-             "type":"text",
-             "name":"Name",
-             "value":"ddada",
-             
-          },
-          {
-             "type":"comment",
-             "name":"Remarks",
-             "value":"dadad",
-          }
-
-     ]
- },
-
-       {
-         questions: [
-   
-          {
-             "type":"text",
-             "name":"Name",
-             "value":"ddada",
-             
-          },
-          {
-             "type":"comment",
-             "name":"Remarks",
-             "value":"dadad",
-          }
-
-     ]
- },
-   
-   
    ]
 };
+
+
+
+
+
+
+
 
 
 
@@ -211,6 +235,7 @@ survey.onComplete.add(function(result) {
 //result: " + JSON.stringify(result.data) + "
 
    localStorage["mdata"] =  JSON.stringify(result.data);
+   alert(localStorage["mdata"]);
    var datas = localStorage["mdata"];
    var obj = JSON.parse(datas);
    $.ajax({
@@ -320,10 +345,58 @@ Swal.fire({
 
  }).then((result) => {
    if (result.value) {
-      
+      alert(mdata);
+      localStorage["myJson"]=mdata; 
       window.location.href = 'startsurvey';
 
    }
  });
 
 });
+
+
+
+
+survey.data = {
+    c1:localStorage["myJson"],
+};
+$("#surveyElement").Survey({model: survey, onValueChanged: surveyValueChanged});
+//$("#surveyElement").Survey({ model: survey, onCurrentPageChanged: doOnCurrentPageChanged});
+
+$('body').on('click', '#surveyNext', function () {
+    //var y = document.getElementById('surveyPageNo').value;
+   // alert('tesrt');
+    $('.wrapper').hide(0);
+    $('#surveyElement').hide();
+});
+$('body').on('click', '#surveyPrev', function () {
+    $('#surveyElement').show(500);
+});
+
+    
+$(function(){
+    // Bind the swipeleftHandler callback function to the swipe event on div.box
+    $( ".wrapper" ).on( "swipeleft", swipeleftHandler );
+   
+    // Callback function references the event target and adds the 'swipeleft' class to it
+    function swipeleftHandler( event ){
+        //$(event.target).addClass("swipeleft");
+   
+        
+        //$("#surveyComplete").click();
+    }
+
+     // Bind the swipeleftHandler callback function to the swipe event on div.box
+     $( ".wrapper" ).on( "swiperight", swiperightHandler );
+   
+     // Callback function references the event target and adds the 'swipeleft' class to it
+     function swiperightHandler( event ){
+         //$(event.target).addClass("swipeleft");
+            $("#surveyPrev").click();
+     }
+  });
+
+  $('body').on('click', '#nextDestination', function () {
+    $("#surveyNext").click();
+  });   
+  doOnCurrentPageChanged(survey);
