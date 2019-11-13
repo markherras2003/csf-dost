@@ -1,5 +1,5 @@
-jQuery(document).ready(function ($) {
 
+jQuery(document).ready(function ($) {
 var mainurl = '';
 //localStorage["myJson"]="";
 if (window.location.host == "localhost")
@@ -9,24 +9,22 @@ if (window.location.host == "localhost")
    mainurl =  '';
 }
 
+
+
+
+
 Survey.Survey.cssType = "bootstrap";
 Survey.showQuestionNumbers = "off";
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
-alert(localStorage["myJson"]);
 if (localStorage["myJson"]=="HUMAN RESOURCES")
 
 
 var json = {
    goNextPageAutomatic: false,
-   showNavigationButtons: false,
-   showQuestionNumbers: "",
+   showNavigationButtons: true,
    requiredText: "",
    
    pages: [
-   
-{
-    c1: localStorage["myJson"],
-},
    
        {
            questions: [
@@ -174,10 +172,8 @@ var json = {
                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
            },
           ]
-      },
-]
-
-
+        },
+    ]
  },
 
  {
@@ -195,49 +191,21 @@ var json = {
         "value":"dadad",
      }
 
-]
-},
-
- {
-         questions: [
-   
-            {
-                type: "html",
-                name: "info",
-                html: "<a id='surveyComplete2' href='#' onclick='survey.completeLastPage();' class='ui-link' style='display: inline;'><img src='../surveyscript/images/survey_button.png' height='100' width='100' alt=''></a>"
-
-            },
-
-     ]
+    ]   
  },
 
-   ]
-};
-
-
-
-
-
-
-
-
-
+]};
 
 
 window.survey = new Survey.Model (json);
 
-survey.showQuestionNumbers = 'on';
+survey.showQuestionNumbers = 'off';
 survey.onComplete.add(function(result) {
 
-//document.querySelector('#surveyResult').innerHTML = JSON.stringify(result.data);
-//"<h1 style='text-align:center;text-decoratation:uppercase;'>Thank you for completing the survey</h1>";
-
-//result: " + JSON.stringify(result.data) + "
-
    localStorage["mdata"] =  JSON.stringify(result.data);
-   alert(localStorage["mdata"]);
    var datas = localStorage["mdata"];
-   var obj = JSON.parse(datas);
+   var c1 = localStorage["myJson"]
+   var datas = JSON.parse(datas);
    $.ajax({
       type: "POST",
       url: mainurl + "insertrecord",
@@ -246,7 +214,8 @@ survey.onComplete.add(function(result) {
       beforeSend: function() {
       },
       success: function (data) {
-                  document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
+          alert(data);
+                  document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;color:#212121;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
                   setTimeout(() => {
                      window.location.href  = 'survey';
                   }, 5000);
@@ -266,7 +235,7 @@ completingSurvey: "Thenk you for Completeting the Customer Feedback",
 loadingSurvey: "Survey is loading...",
 optionsCaption: "Choose...",
 requiredError: "Please answer the question.",
-requiredInAllRowsError: "Please answer questions in all rows.",
+requiredInAllRowsError: "Please answer   in all rows.",
 numericError: "The value should be numeric.",
 textMinLength: "Please enter at least {0} symbols.",
 textMaxLength: "Please enter less than {0} symbols.",
@@ -322,14 +291,7 @@ cancelBtn.onclick = function() {
 
 cancelBtn.innerHTML = "Cancel";
 cancelBtn.className = "btn btn-red"
-
-footer.appendChild(cancelBtn);
-
-
-
-});
-
-
+//footer.appendChild(cancelBtn);
 
 
 $( document ).on( "click", ".openmode", function () {
@@ -351,52 +313,7 @@ Swal.fire({
 
    }
  });
-
+ 
 });
 
-
-
-
-survey.data = {
-    c1:localStorage["myJson"],
-};
-$("#surveyElement").Survey({model: survey, onValueChanged: surveyValueChanged});
-//$("#surveyElement").Survey({ model: survey, onCurrentPageChanged: doOnCurrentPageChanged});
-
-$('body').on('click', '#surveyNext', function () {
-    //var y = document.getElementById('surveyPageNo').value;
-   // alert('tesrt');
-    $('.wrapper').hide(0);
-    $('#surveyElement').hide();
 });
-$('body').on('click', '#surveyPrev', function () {
-    $('#surveyElement').show(500);
-});
-
-    
-$(function(){
-    // Bind the swipeleftHandler callback function to the swipe event on div.box
-    $( ".wrapper" ).on( "swipeleft", swipeleftHandler );
-   
-    // Callback function references the event target and adds the 'swipeleft' class to it
-    function swipeleftHandler( event ){
-        //$(event.target).addClass("swipeleft");
-   
-        
-        //$("#surveyComplete").click();
-    }
-
-     // Bind the swipeleftHandler callback function to the swipe event on div.box
-     $( ".wrapper" ).on( "swiperight", swiperightHandler );
-   
-     // Callback function references the event target and adds the 'swipeleft' class to it
-     function swiperightHandler( event ){
-         //$(event.target).addClass("swipeleft");
-            $("#surveyPrev").click();
-     }
-  });
-
-  $('body').on('click', '#nextDestination', function () {
-    $("#surveyNext").click();
-  });   
-  doOnCurrentPageChanged(survey);

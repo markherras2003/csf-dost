@@ -54,7 +54,7 @@ div.survx td{
     background-color:#ecf0f5 !important;
 }
 
-@import url("css/myfonts.css");
+@import url("myfonts.css");
 
 
 .my-rating {
@@ -89,6 +89,10 @@ div.survx td{
 
 h5 {
     font-size: 31px!important;
+}
+
+h3 {
+    color: #212121  ;
 }
 
 span {
@@ -219,6 +223,7 @@ div.sv_q_imgsel {
 fieldset.sv_imgsel {
     padding: 20px;
     text-align: center;
+    margin-top: 175px;
 }
  div.sv_q_imgsel img {
     filter: grayscale(50%);
@@ -233,6 +238,10 @@ fieldset.sv_imgsel {
 div.sv_q_imgsel.checked img {
     filter: grayscale(0%)!important;
     transition: 0.3s;
+}
+
+div.panel-footer.card-footer {
+    background: transparent!important;
 }
 
 
@@ -378,11 +387,12 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
     width: 100%;
     height: 100%;
     margin: 0px auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-left:7%;
     padding-right:7%;
     color: #212121  ;
+    text-align: center;
 }
 
 
@@ -393,12 +403,13 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
 
 .sv_qstn .sv_q_imgsel label > div > img {
     display: block;
-    height:216px;
+    height:100%;
     width: 216px;
 }
 
 .sv_main {
     background-color: #ffffff!important;
+
 }
 
 .sv_main .sv_custom_header {
@@ -427,7 +438,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
 
     .sv_qstn .sv_q_imgsel label > div > img {
         display: block;
-        height:140px;
+        height:100%;
         width: 140px;
     }
 
@@ -487,7 +498,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
 
     .sv_qstn .sv_q_imgsel label > div > img {
         display: block;
-        height:248px;
+        height:100%;
         width: 248px;
         text-align: center;
     }
@@ -516,8 +527,6 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
    }
 
    @media screen and (min-device-width: 901px) and (max-device-width: 1200px){
-
-
     fieldset.sv_imgsel {
         padding: 0px;
         text-align: center;

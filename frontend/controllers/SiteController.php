@@ -293,11 +293,13 @@ class SiteController extends Controller
     public function actionInsertrecord()
     {    
         //header("Access-Control-Allow-Origin: *");
-        $con = mysqli_connect("localhost","root", "root","csf-main") or die ("could not connect database");
+        Yii::$app->request->csrfParam;
+        $con =mysqli_connect("localhost","root", "root","csf-main") or die ("could not connect database");
        // $jsons = $_POST["jsondata"];
 
         $request = Yii::$app->request;
         $jsons = $request->post('jsondata');
+        $cone = $request->post('c1');
         $dataArray = json_decode($jsons, true);
 $c1='';
 $one='';
@@ -308,7 +310,7 @@ $five='';
 $name='';
 $remarks='';
 
-$c1 = $dataArray["c1"];
+$c1 = $cone;
 $one = $dataArray["q1"]["one"];
 $two = $dataArray["q1"]["two"];
 $three = $dataArray["q1"]["three"];
@@ -348,5 +350,6 @@ else
 echo "error";
 
 return trim($q);
-    }
+ 
+  }
 }
