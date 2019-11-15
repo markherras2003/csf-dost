@@ -1,29 +1,14 @@
 
 jQuery(document).ready(function ($) {
-var mainurl = '';
-//localStorage["myJson"]="";
-if (window.location.host == "localhost")
-{
-    mainurl = '';
-}else{
-   mainurl =  '';
-}
-
-
-
-
+var mainurl = 'http://csf.local/site/';
 
 Survey.Survey.cssType = "bootstrap";
 Survey.showQuestionNumbers = "off";
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
-if (localStorage["myJson"]=="HUMAN RESOURCES")
-
+if (localStorage["myJson"]=="HUMAN RESOURCES") {
 
 var json = {
-   goNextPageAutomatic: false,
-   showNavigationButtons: true,
-   requiredText: "",
-   
+
    pages: [
    
        {
@@ -197,33 +182,9 @@ var json = {
 ]};
 
 
-window.survey = new Survey.Model (json);
-
-survey.showQuestionNumbers = 'off';
-survey.onComplete.add(function(result) {
-
-   localStorage["mdata"] =  JSON.stringify(result.data);
-   var datas = localStorage["mdata"];
-   var c1 = localStorage["myJson"]
-   var datas = JSON.parse(datas);
-   $.ajax({
-      type: "POST",
-      url: mainurl + "insertrecord",
-      data: { jsondata: datas },
-      dataType: "text",
-      beforeSend: function() {
-      },
-      success: function (data) {
-          alert(data);
-                  document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;color:#212121;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
-                  setTimeout(() => {
-                     window.location.href  = 'survey';
-                  }, 5000);
-      }
-   });
-});
-
+}
 //Example of adding new locale into the library.
+/*
 var mycustomSurveyStrings = {
 pagePrevText: "Previous",
 pageNextText: "Next",
@@ -231,7 +192,7 @@ completeText: "Submit",
 otherItemText: "Other (describe)",
 progressText: "Page {0} of {1}",
 emptySurvey: "There is no visible page or question in the survey.",
-completingSurvey: "Thenk you for Completeting the Customer Feedback",
+completingSurvey: "Thank you for Completing the Customer Feedback",
 loadingSurvey: "Survey is loading...",
 optionsCaption: "Choose...",
 requiredError: "Please answer the question.",
@@ -262,10 +223,10 @@ savingDataError: "An error occurred and we could not save the results.",
 savingDataSuccess: "The results were saved successfully!",
 saveAgainButton: "Try again"
 };
+
 Survey.surveyLocalization.locales["my"] = mycustomSurveyStrings;
 survey.locale = "my";
-
-$("#surveyElement").Survey({model:survey});
+*/
 
 var footer = document.querySelector(".panel-footer")
 var cancelBtn = document.createElement("button");
@@ -314,5 +275,36 @@ Swal.fire({
  });
  
 });
+
+
+window.survey = new Survey.Model (json);
+
+survey.showQuestionNumbers = 'off';
+survey.onComplete.add(function(result) {  
+
+   $.ajax({
+      type: "POST",
+      url: mainurl + "insertrecords",
+      data: { jsondata: JSON.stringify(result.data) },
+      dataType: "json",
+      contentType: "application/json",
+      crossDomain: true,
+      cache: false,
+      beforeSend: function() {
+      },
+      success: function (data) {
+        if (data == 'success') {
+            document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;color:#212121;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
+            setTimeout(() => {
+               window.location.href  = 'survey';
+            }, 5000);
+        }
+
+      }
+   });
+});
+
+    $("#surveyElement").Survey({model:survey});
+
 
 });

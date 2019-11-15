@@ -1,6 +1,7 @@
 
 body {
     background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif!important;
 }
 .btn-green {
     background-color: #1ab394;
@@ -54,7 +55,7 @@ div.survx td{
     background-color:#ecf0f5 !important;
 }
 
-@import url("myfonts.css");
+
 
 
 .my-rating {
@@ -274,7 +275,7 @@ div.panel-footer.card-footer {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     opacity: 0.9;
     width: 300px;
 }
@@ -410,6 +411,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
 
 .sv_main {
     background-color: #ffffff!important;
+    font-family: 'Source Sans Pro', sans-serif!important;
 
 }
 

@@ -22,7 +22,7 @@ if (Yii::$app->controller->action->id === 'login') {
     ?>
     <?php $this->beginPage() ?>
     <!DOCTYPE html>
-    <html lang="<?= Yii::$app->language ?>" ng-app="<?= str_replace(" ", "",strtolower(Html::encode($this->title))) ?>">
+    <html lang="<?= Yii::$app->language ?>">
     <head>
         <meta charset="<?= Yii::$app->charset ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,8 +33,6 @@ if (Yii::$app->controller->action->id === 'login') {
         <script type="text/javascript">
             var frontendURI = "<?= $GLOBALS["frontend_base_uri"];
             ?>";
-            var HeaderController = "<?= str_replace(" ", "",strtolower(Html::encode($this->title))); ?>";
-            var MainController = "<?= str_replace(" ", "",strtolower(Html::encode($this->title))).'ctrl'; ?>";
         </script>
     </head>
     <body class="hold-transition skin-red" oncontextmenu="return true;">

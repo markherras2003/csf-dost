@@ -1,0 +1,493 @@
+function doOnCurrentPageChanged(survey) {
+    document
+        .getElementById('surveyPrev')
+        .style
+        .display = !survey.isFirstPage
+            ? "inline"
+            : "none";
+    document
+        .getElementById('surveyNext')
+        .style
+        .display = !survey.isFirstPage
+            ? "none"
+            : "none";
+    document
+        .getElementById('surveyNext')
+        .style
+        .display = !survey.isLastPage
+                ? "inline"
+                : "none";           
+    document
+        .getElementById('surveyComplete')
+        .style
+        .display = !survey.isLastPage
+            ? "inline"
+            : "none";
+    document
+        .getElementById('surveyProgress')
+        .innerText = "Page " + (
+    survey.currentPageNo + 1) + " of " + survey.visiblePageCount + ".";
+    if (document.getElementById('surveyPageNo')) 
+        document
+            .getElementById('surveyPageNo')
+            .value = survey.currentPageNo;
+}
+    
+
+
+
+Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
+Survey.defaultBootstrapCss.rating.item = "btn btn-default my-rating";
+Survey.Survey.cssType = "bootstrap";
+
+Survey.JsonObject.metaData.addProperty("checkbox", {name: "group:string", default: "g0"});
+
+Survey.StylesManager.applyTheme("darkblue");
+
+var myCss = {
+    matrix: {
+        root: "table table-striped"
+    },
+    navigationButton: "button btn-lg"
+};
+
+
+
+var json = {
+    //showProgressBar: "bottom",
+    goNextPageAutomatic: true,
+    showNavigationButtons: false,
+    pages: [
+    
+        {
+            questions: [
+            
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div id='firstpage' class='testing'></div>"
+                },
+            
+            
+                {
+                    type: "text", name: "name", title: "Name (Optional) :" ,  isRequired: false , "colCount": 2  ,
+                },
+            
+         
+                {
+                    "type": "imagepicker",
+                    "name": "gender",
+                    "isRequired": true,
+                    "title": "I am a :",
+                    "colCount": 2 ,
+                    "choices": [
+                        {
+                            "value": "Male",
+                            "imageLink": "images/male.png",
+                        }, {
+                            "value": "Female",
+                            "imageLink": "images/female.png"
+                        },
+                    ]
+                },
+
+
+
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div id='secondpage' class='testing2'></div>"
+                },
+
+
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div style='margin-bottom:900px;z-index:999999;width:100%;margin:0px auto;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty2'><img class='floating' src='images/down.png' height='48' width='48'></a></div>"
+                },
+
+           
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div style='width:100%;margin:0px auto;z-index:999999;margin-top:50px;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty2up'><img class='floating' src='images/up.png' height='48' width='48'></a></div>"
+                },
+
+                
+
+                {
+                    "type": "imagepicker",
+                    "name": "organization",
+                    "isRequired": true,
+                    "colCount": 4,
+       
+                    "title": "Type of Organization",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/academe.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/goverment.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/industry.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/organization.png"
+                        },
+                        
+                    ]
+                },
+
+                {
+                    type: "radiogroup",
+                    name: "haveAttend",
+                    title: "Is this your first time to attend the event (NSTW)?",
+                    isRequired: true,
+                    choices: [
+                        "Yes", "No" 
+                    ],
+                    colCount: 0
+                },
+
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div id='thirdpage' class='testing3'></div>"
+                },
+
+                {
+                    type: "html",
+                    name: "info",
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    html: "<div style='width:100%;margin:0px auto;margin-left:30%;z-index:99999999;text-align:left'><a type='button' style='cursor:pointer;' id='qwerty3'><img class='floating' src='images/down.png' height='48' width='48'></a></div>"
+                   
+                },
+                
+              
+              
+
+               /* {
+                    type: "html",
+                    name: "info",
+                    html: "<div style='margin-bottom:900px;z-index:999999;width:100%;margin:0px auto;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty3'><img class='floating' src='images/down.png' height='48' width='48'></a></div>"
+                },
+*/
+  
+
+               {
+                   type: "html",
+                   name: "info",
+                   "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                   html: "<div style='width:100%;margin:0px auto;z-index:999999;margin-top:50px;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty3up'><img class='floating' src='images/up.png' height='48' width='48'></a></div>"
+                },
+
+                
+                
+                {
+                    "type": "imagepicker",
+                    "name": "lastevent",
+                    "isRequired": true,
+                    "visibleIf": "{haveAttend} = 'No'",
+                    "title": "How was your experience of the last event? (NSTW 2017)",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/rate-1.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/rate-2.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/rate-3.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/rate-4.png"
+                        },
+                        
+                    ],         
+                },
+
+
+                {
+                    
+                    "type": "sortablelist",
+                    "name": "event",
+                    "title": "How did you know about the NSTW 2018?",
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    "isRequired": true,
+                    
+                    "choices": [
+  
+                      {
+                        "value": "1",
+                        "text": "<img height='64' width='100%' src='images/tv.png'>"
+                    }, {
+                        "value": "2",
+                        "text": "<img height='64' width='100%' src='images/radio.png'>"
+                    }, {
+                        "value": "3",
+                        "text": "<img height='64' width='100%' src='images/newspaper.png'>"
+                    }, {
+                        "value": "4",
+                        "text": "<img height='64' width='100%' src='images/network.png'>"
+                    }, {
+                        "value": "5",
+                        "text": "<img height='64' width='100%' src='images/ads.png'>"
+                    }, {
+                        "value": "6",
+                        "text": "<img height='64' width='100%' src='images/wom.png'>"
+                    }, {
+                        "value": "7",
+                        "text": "<img height='64' width='100%' src='images/invitation.png'>"
+                    },        
+                    ],
+                },
+            
+                {
+                    "type": "sortablelist",
+                    "name": "marketplace",
+                    "startWithNewLine": false,
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    "title": "How did you know about the Marketplace?",
+                    "isRequired": true,
+                    "choices": [
+  
+                        {
+                          "value": "1",
+                          "text": "<img height='64' width='100%' src='images/tv.png'>"
+                      }, {
+                          "value": "2",
+                          "text": "<img height='64' width='100%' src='images/radio.png'>"
+                      }, {
+                          "value": "3",
+                          "text": "<img height='64' width='100%' src='images/newspaper.png'>"
+                      }, {
+                          "value": "4",
+                          "text": "<img height='64' width='100%' src='images/network.png'>"
+                      }, {
+                          "value": "5",
+                          "text": "<img height='64' width='100%' src='images/ads.png'>"
+                      }, {
+                          "value": "6",
+                          "text": "<img height='64' width='100%' src='images/wom.png'>"
+                      }, {
+                          "value": "7",
+                          "text": "<img height='64' width='100%' src='images/invitation.png'>"
+                      },        
+                    ],
+                },
+
+
+      
+
+              /*  {
+                    type: "html",
+                    name: "info",
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    html: "<div style='width:100%;margin:0px auto;margin-top:-25px;z-index:99999999;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty3'><img class='floating' src='images/down.png' height='48' width='48'></a></div>"
+                },
+                */
+            /*  
+                {
+                    type: "html",
+                    name: "info",
+                    html: "<div id='thirdpage'></div>"
+                },
+            */
+                
+                
+           {
+            type: "html",
+            name: "info",
+            html: "<div id='fourthpage' class='testing4'></div>"
+                },
+           
+                {
+                    type: "html",
+                    name: "info",
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    html: "<div style='margin-bottom:900px;z-index:999999;width:100%;margin:0px auto;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty4'><img class='floating' src='images/down.png' height='48' width='48'></a></div>"
+                },
+
+
+           
+                {
+                    type: "html",
+                    name: "info",
+                    "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+                    html: "<div style='width:100%;margin:0px auto;z-index:999999;margin-top:50px;text-align:center'><a type='button' style='cursor:pointer;' id='qwerty4up'><img class='floating' src='images/up.png' height='48' width='48'></a></div>"
+                },
+           
+           
+           {
+            type: "radiogroup",
+            name: "haveAttend2",
+            "visibleIf": "{haveAttend} = 'No' or {haveAttend} = 'Yes'",
+            title: "Have you purchased anything from Marketplace?",
+            isRequired: true,
+            choices: [
+                "Yes", "No" 
+            ],
+            colCount: 0
+        },
+            
+
+                {
+                    "type": "imagepicker",
+                    "name": "transaction",
+                    "isRequired": true,
+                    "title": "How satisfied are you with our modes of transaction? (onestore hub, vending machine, over-the-counter)",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/rate-1.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/rate-2.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/rate-3.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/rate-4.png"
+                        },
+                        
+                    ],         
+                },
+                
+
+                {
+                    "type": "imagepicker",
+                    "name": "pricing",
+                    "isRequired": true,
+                    "colCount": 2,
+                    "startWithNewLine": false,
+                    "title": "How satisfied are you with the price vis-a-vis the product",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/rate-1.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/rate-2.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/rate-3.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/rate-4.png"
+                        },
+                        
+                    ],                 
+                },
+
+                {
+                    "type": "html",
+                   },
+                
+                {
+                    "type": "imagepicker",
+                    "name": "relationship",
+                    "isRequired": true,
+                    "colCount":2,
+                    "title": "How satisfied are you with the level of customer service we provide?",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/rate-1.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/rate-2.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/rate-3.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/rate-4.png"
+                        },
+                        
+                    ]
+                },
+                
+                {
+                    "type": "imagepicker",
+                    "name": "overall",
+                    "isRequired": true,
+                    "startWithNewLine": false,
+                    "title": "How will you rate your overall experience in the marketplace?",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/rate-1.png"
+                        }, {
+                            "value": "2",
+                            "imageLink": "images/rate-2.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "images/rate-3.png"
+                        }, {
+                            "value": "4",
+                            "imageLink": "images/rate-4.png"
+                        },
+                        
+                    ]
+                },
+                
+                {
+                    "type": "imagepicker",
+                    "name": "thumbs",
+                    "isRequired": true,
+                    "title": "How likely will you recommend D` STore to your family and friends?",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "images/thumb-up.ico"
+                        }, {
+                            "value": "0",
+                            "imageLink": "images/thumb-down.ico"
+                        },
+                    ]
+                } 
+            
+
+
+            ]
+        },
+    
+    
+    
+    ]
+};
+
+window.survey = new Survey.Model(json);
+
+survey.onComplete.add(function(result) {
+    document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;'>Redirecting in <span id='time'>5</span> seconds!</div>";
+   // document.querySelector('#surveyResult2').innerHTML = "<div style='text-align: center;padding-bottom: 15px;'>Redirecting in <span id='time'>5</span> seconds!</div>";
+    //localStorage["mdata"] =  JSON.stringify(result.data);
+    //document.querySelector('#surveyResult').innerHTML = localStorage["mdata"]; 
+    var datas = localStorage["mdata"];
+    $.ajax({
+        type: "POST",
+        url: "http://localhost/nstw/insert_record.php",
+        data: { jsondata: datas },
+        
+        dataType: "text",
+        crossDomain: true,
+        cache: false,
+        beforeSend: function() {
+            //$("#insert").val('Connecting...');
+        },
+        success: function (data) {
+            alert(data);
+            setTimeout(() => {
+                //window.location.href  = 'index.html';
+            }, 5000);
+        }
+    });
+});
+$("#surveyElement").Survey({ model: survey, onCurrentPageChanged: doOnCurrentPageChanged});
+//$("#surveyElement2").Survey({ model: survey.currentPageNo = 1});
+doOnCurrentPageChanged(survey);
