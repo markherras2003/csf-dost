@@ -92,7 +92,7 @@ h5 {
 }
 
 h3 {
-    color: #212121  ;
+    color: #212121 !important ;
 }
 
 span {
@@ -242,9 +242,10 @@ div.sv_q_imgsel.checked img {
 
 div.panel-footer.card-footer {
     background: transparent!important;
+    border: none;
+    text-align: right;
+    width: 85%;     
 }
-
-
 
  div.sv_q_imgsel.checked img.sv_q_imgsel_image {
      position: relative; 
@@ -533,8 +534,11 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
     }
  
 }
- 
 .sv_main textarea,input[type="text"] {
     text-align:center;
     width:98%!important;
+}
+
+.sv_main input[type="button"] {
+    padding: 10px!important;
 }

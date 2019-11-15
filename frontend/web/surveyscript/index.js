@@ -145,7 +145,7 @@ var json = {
                ]
            },
      ]
- },
+ }, 
  {
     questions: [
 
@@ -307,7 +307,6 @@ Swal.fire({
 
  }).then((result) => {
    if (result.value) {
-      alert(mdata);
       localStorage["myJson"]=mdata; 
       window.location.href = 'startsurvey';
 
