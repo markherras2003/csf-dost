@@ -2,6 +2,7 @@
  include "db.php";
 
 $jsons = $_POST["jsondata"];
+$c2 = $_POST["c1"];
 $dataArray = json_decode($jsons, true);
 $c1='';
 $one='';
@@ -12,12 +13,12 @@ $five='';
 $name='';
 $remarks='';
 
-$c1 = $dataArray["c1"];
-$one = $dataArray["q1"]["one"];
-$two = $dataArray["q1"]["two"];
-$three = $dataArray["q1"]["three"];
-$four = $dataArray["q1"]["four"];
-$five = $dataArray["q1"]["five"];
+$c1 = $c2;
+$one = $dataArray["q1"];
+$two = $dataArray["q2"];
+$three = $dataArray["q3"];
+$four = $dataArray["q4"];
+$five = $dataArray["q5"];
 
 if(empty($dataArray["Name"])) {
   $name='';

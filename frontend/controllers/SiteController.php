@@ -293,62 +293,60 @@ class SiteController extends Controller
     public function actionInsertrecords()
     {    
         header("Access-Control-Allow-Origin: *");
-        $con=mysqli_connect("localhost","root", "root","csf-main") or die ("could not connect database");
+        $con=mysqli_connect("localhost","root", "root","csf-main") OR die ("could not connect database");
         
 
         $request = Yii::$app->request;
         $jsons = $request->post('jsondata');
-       // $cone = $request->post('myc1');
-        $dataArray = json_decode($jsons, true);
+        $dataArray = json_decode($jsons, TRUE);
 $c1='';
-$one='';
+$ONE='';
 $two='';
 $three='';
 $four='';
 $five='';
-$name='';
+$NAME='';
 $remarks='';
 
 $c1 = 'HR';
-$one = $dataArray["q1"]["one"];
-$two = $dataArray["q1"]["two"];
-$three = $dataArray["q1"]["three"];
-$four = $dataArray["q1"]["four"];
-$five = $dataArray["q1"]["five"];
+$ONE = $dataArray["q1"];
+$two = $dataArray["q2"];
+$three = $dataArray["q3"];
+$four = $dataArray["q4"];
+$five = $dataArray["q5"];
 
-if(empty($dataArray["Name"])) {
-  $name='';
-}else{
-  $name = $dataArray["Name"];
+IF(empty($dataArray["Name"])) {
+  $NAME='';
+}ELSE{
+  $NAME = $dataArray["Name"];
 }
 
-if(empty($dataArray["Remarks"])) {
+IF(empty($dataArray["Remarks"])) {
   $remarks='';
-}else{
+}ELSE{
   $remarks = $dataArray["Remarks"];
 }
 
-$curDate = date('Y-m-d');
+$CURDATE = DATE('Y-m-d');
 
 
-$insert = "INSERT INTO `tbl_csfrating`(`unit_type`,`q1`,`q2`,`q3`,`q4`,`q5`,`rating_name`,`rating_comment`,`rating_date`)";
-$insert = $insert." VALUES('".$c1."',";
-$insert = $insert."'".$one."',";
-$insert = $insert."'".$two."',";
-$insert = $insert."'".$three."',";
-$insert = $insert."'".$four."',";
-$insert = $insert."'".$five."',";
-$insert = $insert."'".$name."',";
-$insert = $insert."'".$remarks."',";
-$insert = $insert."'".$curDate."')";
-$q=mysqli_query($con,$insert);
+$INSERT = "INSERT INTO `tbl_csfrating`(`unit_type`,`q1`,`q2`,`q3`,`q4`,`q5`,`rating_name`,`rating_comment`,`rating_date`)";
+$INSERT = $insert." VALUES('".$c1."',";
+$INSERT = $insert."'".$one."',";
+$INSERT = $insert."'".$two."',";
+$INSERT = $insert."'".$three."',";
+$INSERT = $insert."'".$four."',";
+$INSERT = $insert."'".$five."',";
+$INSERT = $insert."'".$name."',";
+$INSERT = $insert."'".$remarks."',";
+$INSERT = $insert."'".$curDate."')";
+//$q=mysqli_query($con,$INSERT);
 
-if($q)
+/*if($q)
 echo "success";
 else
 echo "error";
-
-return trim ($q);                                                                                                                                                   
-
-}
+*/
+RETURN TRIM ($INSERT);                                                                                                                                                 
+    }
 }
