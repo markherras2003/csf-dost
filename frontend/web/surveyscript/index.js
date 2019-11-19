@@ -1980,7 +1980,6 @@ jQuery(document).ready(function ($) {
            beforeSend: function() {
            },
            success: function (data) {
-               alert(data);
             if (data == 'success') {
                  document.querySelector('#surveyResult').innerHTML = "<div style='text-align: center;padding-bottom: 15px;color:#212121;'>Redirecting in few seconds or Click <a href='index.html'>here</a></div>";  
                  setTimeout(() => {
