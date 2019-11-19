@@ -1,6 +1,6 @@
 <?php
- include "db.php";
-
+//include "db.php";
+$con = mysqli_connect("192.168.1.96","csfuser", "D057R3g10n9!@#","csf-main") or die ("could not connect database");
 $jsons = $_POST["jsondata"];
 $c2 = $_POST["c1"];
 $dataArray = json_decode($jsons, true);
