@@ -2056,7 +2056,7 @@ jQuery(document).ready(function ($) {
         completingSurvey: "Thank you for Completing the Customer Feedback",
         loadingSurvey: "Survey is loading...",
         optionsCaption: "Choose...",
-        requiredError: "Please rate the question.",
+        requiredError: "Please rate to proceed.",
         requiredInAllRowsError: "Please answer   in all rows.",
         numericError: "The value should be numeric.",
         textMinLength: "Please enter at least {0} symbols.",
