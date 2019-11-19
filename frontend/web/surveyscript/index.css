@@ -442,7 +442,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
     .sv_qstn .sv_q_imgsel label > div > img {
         display: block;
         height:100%;
-        width: 140px;
+        width: 350px;
     }
 
     .sv_qstn .sv_q_imgsel label > div {
