@@ -2025,13 +2025,13 @@ jQuery(document).ready(function ($) {
     $( document ).on( "click", ".openmode", function () {
     var mdata = $( this ).data( 'id' );
     Swal.fire({
-       title: mdata,
-       text: "You Selected :" + mdata,
+       title: "You Have Selected: " + mdata,
+       text: "",
        icon: 'info',
-       showCancelButton: true,
-       confirmButtonColor: '#3085d6',
-       cancelButtonColor: '#d33',
-       confirmButtonText: 'Yes'
+       showCancelButton: false,
+       confirmButtonColor: '#00FF00',
+       cancelButtonColor: '#00FF00 ',
+       confirmButtonText: 'Proceed'
     
      }).then((result) => {
        if (result.value) {

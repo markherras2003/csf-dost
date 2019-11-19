@@ -1,2 +1,4 @@
 
 vendor/kartik-v/yii2-editable/
+frontend/web/surveyscript/db.php
+common/config/db.php

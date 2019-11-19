@@ -224,7 +224,7 @@ div.sv_q_imgsel {
 fieldset.sv_imgsel {
     padding: 20px;
     text-align: center;
-    margin-top: 175px;
+    margin-top: 125px;
 }
  div.sv_q_imgsel img {
     filter: grayscale(50%);
@@ -463,7 +463,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
         font-size: 28px!important;
     }
     
-    span {
+    span:first {
         font-size: 28px;
         color: #212121;
         text-shadow: #ffffff 2px 1px;
@@ -514,7 +514,7 @@ div#sp_100,#sp_101,#sp_102,#sp_103,#sp_104,#sp_105,#sp_106,#sp_107,#sp_108,#sp_1
         font-size: 25px!important;
     }
     
-    span {
+    span:first {
         font-size: 40px;
         color: #212121;
         text-shadow: #ffffff 2px 1px;
