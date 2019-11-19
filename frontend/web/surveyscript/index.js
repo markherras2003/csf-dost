@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     
     Survey.Survey.cssType = "bootstrap";
     Survey.showQuestionNumbers = "off";
+    Survey.requiredError = "",
     Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
     if (localStorage["myJson"]=="HUMAN RESOURCES") {
     
@@ -1963,11 +1964,12 @@ jQuery(document).ready(function ($) {
         
         
     }      
-    
+  
     window.survey = new Survey.Model (json);
-    
-    survey.showQuestionNumbers = 'off';
     survey.requiredText ="";
+    survey.requiredError = "",
+    survey.showQuestionNumbers = 'off';
+
     survey.onComplete.add(function(result) {  
 
         $.ajax({
@@ -2042,6 +2044,49 @@ jQuery(document).ready(function ($) {
      });
      
     });
+
+
+    var mycustomSurveyStrings = {
+        pagePrevText: "Previous",
+        pageNextText: "Next",
+        completeText: "Submit",
+        otherItemText: "Other (describe)",
+        progressText: "Page {0} of {1}",
+        emptySurvey: "There is no visible page or question in the survey.",
+        completingSurvey: "Thank you for Completing the Customer Feedback",
+        loadingSurvey: "Survey is loading...",
+        optionsCaption: "Choose...",
+        requiredError: "Please rate the question.",
+        requiredInAllRowsError: "Please answer   in all rows.",
+        numericError: "The value should be numeric.",
+        textMinLength: "Please enter at least {0} symbols.",
+        textMaxLength: "Please enter less than {0} symbols.",
+        textMinMaxLength: "Please enter more than {0} and less than {1} symbols.",
+        minRowCountError: "Please fill in at least {0} rows.",
+        minSelectError: "Please select at least {0} variants.",
+        maxSelectError: "Please select no more than {0} variants.",
+        numericMinMax: "The '{0}' should be equal or more than {1} and equal or less than {2}",
+        numericMin: "The '{0}' should be equal or more than {1}",
+        numericMax: "The '{0}' should be equal or less than {1}",
+        invalidEmail: "Please enter a valid e-mail address.",
+        urlRequestError: "The request returned error '{0}'. {1}",
+        urlGetChoicesError: "The request returned empty data or the 'path' property is incorrect",
+        exceedMaxSize: "The file size should not exceed {0}.",
+        otherRequiredError: "Please enter the other value.",
+        uploadingFile: "Your file is uploading. Please wait several seconds and try again.",
+        addRow: "Add row",
+        removeRow: "Remove",
+        choices_Item: "item",
+        matrix_column: "Column",
+        matrix_row: "Row",
+        savingData: "The results are saving on the server...",
+        savingDataError: "An error occurred and we could not save the results.",
+        savingDataSuccess: "The results were saved successfully!",
+        saveAgainButton: "Try again"
+        };
+        
+        Survey.surveyLocalization.locales["my"] = mycustomSurveyStrings;
+        survey.locale = "my";
     
     
     });
