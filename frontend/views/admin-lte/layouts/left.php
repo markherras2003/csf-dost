@@ -60,6 +60,7 @@ if(Yii::$app->user->isGuest){
                         //'visible'=> Yii::$app->user->can('access-pre-procurement'),
                         'items' => [
                             ['label' => 'Customer Satisfaction Feedback', 'icon' => 'line-chart', 'url' => ['/site/survey']],
+                            ['label' => 'Question Module', 'icon' => 'cog', 'url' => ['/csf/question']],
                         ]
                     ],
                 
@@ -68,7 +69,7 @@ if(Yii::$app->user->isGuest){
                         'icon' => 'book', 
                         //'visible'=> Yii::$app->user->can('access-book'),
                         'items' => [
-                            ['label' => 'Generate CSF Report', 'icon' => 'th-list', 'url' => ['/csf/report/'],'visible'=> Yii::$app->user->can('access-system-tools')],
+                            ['label' => 'Generate CSF Report', 'icon' => 'th-list', 'url' => ['/csf/csfreport/'],'visible'=> Yii::$app->user->can('access-system-tools')],
                         ]
                     ],
                     [
@@ -94,7 +95,7 @@ if(Yii::$app->user->isGuest){
                                     ['label' => 'Menus', 'icon' => 'scribd', 'url' => ['/admin/menu'],'visible'=> Yii::$app->user->can('access-menu')],
                                     ['label' => 'Rules', 'icon' => 'reorder', 'url' => ['/admin/rule'],'visible'=> Yii::$app->user->can('access-rule')],
                                 ],
-                                'visible'=> Yii::$app->user->can('access-rbac')
+                               // 'visible'=> Yii::$app->user->can('access-rbac')
                             ],
                         ],
                     ],

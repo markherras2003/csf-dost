@@ -1,0 +1,1956 @@
+var json = {
+    
+       pages: [
+    
+           {
+               questions: [
+                   
+                   {
+                       "type": "imagepicker",
+                       "name": "q1",
+                       "isRequired": true,
+                       "title": "Quality of Human Resource Unit Services",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+    
+               ],
+    
+           },
+            {  
+           questions : [
+    
+            {
+                "type": "imagepicker",
+                "name": "q2",
+                "isRequired": true,
+                   "title": "Efficiency of the Human Resource Unit Service",
+                "choices": [
+                    {
+                        "value": "1",
+                        "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                    }, {
+                        "value": "2",
+                        "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                    }, {
+                        "value": "3",
+                        "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                   }, {
+                        "value": "4",
+                        "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                  }, {
+                        "value": "5",
+                        "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                 },
+                ]
+            },
+    
+           ]
+        },
+           {
+             questions: [
+       
+                {
+                   "type": "imagepicker",
+                   "name": "q3",
+                   "isRequired": true,
+                   "title": "Timeliness of Delivery of services",
+                   "choices": [
+                       {
+                           "value": "1",
+                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                       }, {
+                           "value": "2",
+                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                       }, {
+                           "value": "3",
+                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                      }, {
+                           "value": "4",
+                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                     }, {
+                           "value": "5",
+                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                    },
+                   ]
+               },
+    
+         ]
+     },
+           {
+             questions: [
+       
+                {
+                   "type": "imagepicker",
+                   "name": "q4",
+                   "isRequired": true,
+                   "title": "Attitude of staff handling your needs",
+                   "choices": [
+                       {
+                           "value": "1",
+                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                       }, {
+                           "value": "2",
+                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                       }, {
+                           "value": "3",
+                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                      }, {
+                           "value": "4",
+                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                     }, {
+                           "value": "5",
+                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                    },
+                   ]
+               },
+         ]
+     }, 
+     {
+        questions: [
+    
+           {
+              "type": "imagepicker",
+              "name": "q5",
+              "isRequired": true,
+              "title": "Over-all Satisfaction",
+              "choices": [
+                  {
+                      "value": "1",
+                      "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                  }, {
+                      "value": "2",
+                      "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                  }, {
+                      "value": "3",
+                      "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                 }, {
+                      "value": "4",
+                      "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                }, {
+                      "value": "5",
+                      "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+               },
+              ]
+            },
+        ]
+     },
+    
+     {
+        questions: [
+    
+         {
+            "type":"text",
+            "name":"Name",
+            "value":"ddada",
+            
+         },
+         {
+            "type":"comment",
+            "name":"Remarks",
+            "value":"dadad",
+         }
+    
+        ]   
+     },
+    
+    ]};
+    
+    
+    }
+    if (localStorage["myJson"]=="ACCOUNTING") {
+    
+        var json = {
+        
+           pages: [
+        
+               {
+                   questions: [
+                       
+                       {
+                           "type": "imagepicker",
+                           "name": "q1",
+                           "isRequired": true,
+                           "title": "Quality of Service",
+                           "choices": [
+                               {
+                                   "value": "1",
+                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                               }, {
+                                   "value": "2",
+                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                               }, {
+                                   "value": "3",
+                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                              }, {
+                                   "value": "4",
+                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                             }, {
+                                   "value": "5",
+                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                            },
+                           ]
+                       },
+        
+                   ],
+        
+               },
+                {  
+               questions : [
+        
+                {
+                    "type": "imagepicker",
+                    "name": "q2",
+                    "isRequired": true,
+                       "title": "Efficiency Service",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                        }, {
+                            "value": "2",
+                            "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                       }, {
+                            "value": "4",
+                            "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                      }, {
+                            "value": "5",
+                            "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                     },
+                    ]
+                },
+        
+               ]
+            },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q3",
+                       "isRequired": true,
+                       "title": "Timeliness of Delivery",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+        
+             ]
+         },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q4",
+                       "isRequired": true,
+                       "title": "Attitude of staff providing service",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+             ]
+         }, 
+         {
+            questions: [
+        
+               {
+                  "type": "imagepicker",
+                  "name": "q5",
+                  "isRequired": true,
+                  "title": "Over-all Satisfaction",
+                  "choices": [
+                      {
+                          "value": "1",
+                          "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                      }, {
+                          "value": "2",
+                          "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                      }, {
+                          "value": "3",
+                          "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                     }, {
+                          "value": "4",
+                          "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                    }, {
+                          "value": "5",
+                          "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                   },
+                  ]
+                },
+            ]
+         },
+        
+         {
+            questions: [
+        
+             {
+                "type":"text",
+                "name":"Name",
+                "value":"ddada",
+                
+             },
+             {
+                "type":"comment",
+                "name":"Remarks",
+                "value":"dadad",
+             }
+        
+            ]   
+         },
+        
+        ]};
+        
+        
+    }
+    if (localStorage["myJson"]=="CASHIERING") {
+    
+            var json = {
+            
+               pages: [
+            
+                   {
+                       questions: [
+                           
+                           {
+                               "type": "imagepicker",
+                               "name": "q1",
+                               "isRequired": true,
+                               "title": "Quality of Service",
+                               "choices": [
+                                   {
+                                       "value": "1",
+                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                   }, {
+                                       "value": "2",
+                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                   }, {
+                                       "value": "3",
+                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                  }, {
+                                       "value": "4",
+                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                 }, {
+                                       "value": "5",
+                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                },
+                               ]
+                           },
+            
+                       ],
+            
+                   },
+                    {  
+                   questions : [
+            
+                    {
+                        "type": "imagepicker",
+                        "name": "q2",
+                        "isRequired": true,
+                           "title": "Efficiency Service",
+                        "choices": [
+                            {
+                                "value": "1",
+                                "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                            }, {
+                                "value": "2",
+                                "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                            }, {
+                                "value": "3",
+                                "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                           }, {
+                                "value": "4",
+                                "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                          }, {
+                                "value": "5",
+                                "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                         },
+                        ]
+                    },
+            
+                   ]
+                },
+                   {
+                     questions: [
+               
+                        {
+                           "type": "imagepicker",
+                           "name": "q3",
+                           "isRequired": true,
+                           "title": "Timeliness of Delivery",
+                           "choices": [
+                               {
+                                   "value": "1",
+                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                               }, {
+                                   "value": "2",
+                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                               }, {
+                                   "value": "3",
+                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                              }, {
+                                   "value": "4",
+                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                             }, {
+                                   "value": "5",
+                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                            },
+                           ]
+                       },
+            
+                 ]
+             },
+                   {
+                     questions: [
+               
+                        {
+                           "type": "imagepicker",
+                           "name": "q4",
+                           "isRequired": true,
+                           "title": "Attitude of staff providing service",
+                           "choices": [
+                               {
+                                   "value": "1",
+                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                               }, {
+                                   "value": "2",
+                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                               }, {
+                                   "value": "3",
+                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                              }, {
+                                   "value": "4",
+                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                             }, {
+                                   "value": "5",
+                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                            },
+                           ]
+                       },
+                 ]
+             }, 
+             {
+                questions: [
+            
+                   {
+                      "type": "imagepicker",
+                      "name": "q5",
+                      "isRequired": true,
+                      "title": "Over-all Satisfaction",
+                      "choices": [
+                          {
+                              "value": "1",
+                              "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                          }, {
+                              "value": "2",
+                              "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                          }, {
+                              "value": "3",
+                              "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                         }, {
+                              "value": "4",
+                              "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                        }, {
+                              "value": "5",
+                              "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                       },
+                      ]
+                    },
+                ]
+             },
+            
+             {
+                questions: [
+            
+                 {
+                    "type":"text",
+                    "name":"Name",
+                    "value":"ddada",
+                    
+                 },
+                 {
+                    "type":"comment",
+                    "name":"Remarks",
+                    "value":"dadad",
+                 }
+            
+                ]   
+             },
+            
+            ]};
+            
+            
+    }
+    if (localStorage["myJson"]=="SCHOLARSHIP") {
+    
+                var json = {
+                
+                   pages: [
+                
+                       {
+                           questions: [
+                               
+                               {
+                                   "type": "imagepicker",
+                                   "name": "q1",
+                                   "isRequired": true,
+                                   "title": "Relevance of the Scholarship Policies to you",
+                                   "choices": [
+                                       {
+                                           "value": "1",
+                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                       }, {
+                                           "value": "2",
+                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                       }, {
+                                           "value": "3",
+                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                      }, {
+                                           "value": "4",
+                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                     }, {
+                                           "value": "5",
+                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                    },
+                                   ]
+                               },
+                
+                           ],
+                
+                       },
+                        {  
+                       questions : [
+                
+                        {
+                            "type": "imagepicker",
+                            "name": "q2",
+                            "isRequired": true,
+                               "title": "Efficiency of S&T Scholarship Service",
+                            "choices": [
+                                {
+                                    "value": "1",
+                                    "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                }, {
+                                    "value": "2",
+                                    "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                }, {
+                                    "value": "3",
+                                    "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                               }, {
+                                    "value": "4",
+                                    "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                              }, {
+                                    "value": "5",
+                                    "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                             },
+                            ]
+                        },
+                
+                       ]
+                    },
+                       {
+                         questions: [
+                   
+                            {
+                               "type": "imagepicker",
+                               "name": "q3",
+                               "isRequired": true,
+                               "title": "Timeliness of Delivery of services",
+                               "choices": [
+                                   {
+                                       "value": "1",
+                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                   }, {
+                                       "value": "2",
+                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                   }, {
+                                       "value": "3",
+                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                  }, {
+                                       "value": "4",
+                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                 }, {
+                                       "value": "5",
+                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                },
+                               ]
+                           },
+                
+                     ]
+                 },
+                       {
+                         questions: [
+                   
+                            {
+                               "type": "imagepicker",
+                               "name": "q4",
+                               "isRequired": true,
+                               "title": "Attitude of staff handling your needs",
+                               "choices": [
+                                   {
+                                       "value": "1",
+                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                   }, {
+                                       "value": "2",
+                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                   }, {
+                                       "value": "3",
+                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                  }, {
+                                       "value": "4",
+                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                 }, {
+                                       "value": "5",
+                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                },
+                               ]
+                           },
+                     ]
+                 }, 
+                 {
+                    questions: [
+                
+                       {
+                          "type": "imagepicker",
+                          "name": "q5",
+                          "isRequired": true,
+                          "title": "Over-all Satisfaction",
+                          "choices": [
+                              {
+                                  "value": "1",
+                                  "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                              }, {
+                                  "value": "2",
+                                  "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                              }, {
+                                  "value": "3",
+                                  "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                             }, {
+                                  "value": "4",
+                                  "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                            }, {
+                                  "value": "5",
+                                  "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                           },
+                          ]
+                        },
+                    ]
+                 },
+                
+                 {
+                    questions: [
+                
+                     {
+                        "type":"text",
+                        "name":"Name",
+                        "value":"ddada",
+                        
+                     },
+                     {
+                        "type":"comment",
+                        "name":"Remarks",
+                        "value":"dadad",
+                     }
+                
+                    ]   
+                 },
+                
+                ]};
+                
+                
+    }               
+     if (localStorage["myJson"]=="MAINTENANCE") {
+    
+                    var json = {
+                    
+                       pages: [
+                    
+                           {
+                               questions: [
+                                   
+                                   {
+                                       "type": "imagepicker",
+                                       "name": "q1",
+                                       "isRequired": true,
+                                       "title": "Quality of Maintenance Service",
+                                       "choices": [
+                                           {
+                                               "value": "1",
+                                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                           }, {
+                                               "value": "2",
+                                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                           }, {
+                                               "value": "3",
+                                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                          }, {
+                                               "value": "4",
+                                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                         }, {
+                                               "value": "5",
+                                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                        },
+                                       ]
+                                   },
+                    
+                               ],
+                    
+                           },
+                            {  
+                           questions : [
+                    
+                            {
+                                "type": "imagepicker",
+                                "name": "q2",
+                                "isRequired": true,
+                                   "title": "Safety of  equipment and users",
+                                "choices": [
+                                    {
+                                        "value": "1",
+                                        "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                    }, {
+                                        "value": "2",
+                                        "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                    }, {
+                                        "value": "3",
+                                        "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                   }, {
+                                        "value": "4",
+                                        "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                  }, {
+                                        "value": "5",
+                                        "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                 },
+                                ]
+                            },
+                    
+                           ]
+                        },
+                           {
+                             questions: [
+                       
+                                {
+                                   "type": "imagepicker",
+                                   "name": "q3",
+                                   "isRequired": true,
+                                   "title": "Timeliness of Delivery",
+                                   "choices": [
+                                       {
+                                           "value": "1",
+                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                       }, {
+                                           "value": "2",
+                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                       }, {
+                                           "value": "3",
+                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                      }, {
+                                           "value": "4",
+                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                     }, {
+                                           "value": "5",
+                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                    },
+                                   ]
+                               },
+                    
+                         ]
+                     },
+                           {
+                             questions: [
+                       
+                                {
+                                   "type": "imagepicker",
+                                   "name": "q4",
+                                   "isRequired": true,
+                                   "title": "Attitude of staff providing maintenance services",
+                                   "choices": [
+                                       {
+                                           "value": "1",
+                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                       }, {
+                                           "value": "2",
+                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                       }, {
+                                           "value": "3",
+                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                      }, {
+                                           "value": "4",
+                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                     }, {
+                                           "value": "5",
+                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                    },
+                                   ]
+                               },
+                         ]
+                     }, 
+                     {
+                        questions: [
+                    
+                           {
+                              "type": "imagepicker",
+                              "name": "q5",
+                              "isRequired": true,
+                              "title": "Over-all Satisfaction",
+                              "choices": [
+                                  {
+                                      "value": "1",
+                                      "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                  }, {
+                                      "value": "2",
+                                      "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                  }, {
+                                      "value": "3",
+                                      "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                 }, {
+                                      "value": "4",
+                                      "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                }, {
+                                      "value": "5",
+                                      "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                               },
+                              ]
+                            },
+                        ]
+                     },
+                    
+                     {
+                        questions: [
+                    
+                         {
+                            "type":"text",
+                            "name":"Name",
+                            "value":"ddada",
+                            
+                         },
+                         {
+                            "type":"comment",
+                            "name":"Remarks",
+                            "value":"dadad",
+                         }
+                    
+                        ]   
+                     },
+                    
+                    ]};
+                    
+                    
+    }                  
+     if (localStorage["myJson"]=="PURCHASING") {
+    
+                        var json = {
+                        
+                           pages: [
+                        
+                               {
+                                   questions: [
+                                       
+                                       {
+                                           "type": "imagepicker",
+                                           "name": "q1",
+                                           "isRequired": true,
+                                           "title": "Quality of Human Resource Unit Services",
+                                           "choices": [
+                                               {
+                                                   "value": "1",
+                                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                               }, {
+                                                   "value": "2",
+                                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                               }, {
+                                                   "value": "3",
+                                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                              }, {
+                                                   "value": "4",
+                                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                             }, {
+                                                   "value": "5",
+                                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                            },
+                                           ]
+                                       },
+                        
+                                   ],
+                        
+                               },
+                                {  
+                               questions : [
+                        
+                                {
+                                    "type": "imagepicker",
+                                    "name": "q2",
+                                    "isRequired": true,
+                                       "title": "Efficiency of the Human Resource Unit Service",
+                                    "choices": [
+                                        {
+                                            "value": "1",
+                                            "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                        }, {
+                                            "value": "2",
+                                            "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                        }, {
+                                            "value": "3",
+                                            "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                       }, {
+                                            "value": "4",
+                                            "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                      }, {
+                                            "value": "5",
+                                            "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                     },
+                                    ]
+                                },
+                        
+                               ]
+                            },
+                               {
+                                 questions: [
+                           
+                                    {
+                                       "type": "imagepicker",
+                                       "name": "q3",
+                                       "isRequired": true,
+                                       "title": "Timeliness of Delivery of services",
+                                       "choices": [
+                                           {
+                                               "value": "1",
+                                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                           }, {
+                                               "value": "2",
+                                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                           }, {
+                                               "value": "3",
+                                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                          }, {
+                                               "value": "4",
+                                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                         }, {
+                                               "value": "5",
+                                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                        },
+                                       ]
+                                   },
+                        
+                             ]
+                         },
+                               {
+                                 questions: [
+                           
+                                    {
+                                       "type": "imagepicker",
+                                       "name": "q4",
+                                       "isRequired": true,
+                                       "title": "Attitude of staff handling your needs",
+                                       "choices": [
+                                           {
+                                               "value": "1",
+                                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                           }, {
+                                               "value": "2",
+                                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                           }, {
+                                               "value": "3",
+                                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                          }, {
+                                               "value": "4",
+                                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                         }, {
+                                               "value": "5",
+                                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                        },
+                                       ]
+                                   },
+                             ]
+                         }, 
+                         {
+                            questions: [
+                        
+                               {
+                                  "type": "imagepicker",
+                                  "name": "q5",
+                                  "isRequired": true,
+                                  "title": "Over-all Satisfaction",
+                                  "choices": [
+                                      {
+                                          "value": "1",
+                                          "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                      }, {
+                                          "value": "2",
+                                          "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                      }, {
+                                          "value": "3",
+                                          "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                     }, {
+                                          "value": "4",
+                                          "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                    }, {
+                                          "value": "5",
+                                          "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                   },
+                                  ]
+                                },
+                            ]
+                         },
+                        
+                         {
+                            questions: [
+                        
+                             {
+                                "type":"text",
+                                "name":"Name",
+                                "value":"ddada",
+                                
+                             },
+                             {
+                                "type":"comment",
+                                "name":"Remarks",
+                                "value":"dadad",
+                             }
+                        
+                            ]   
+                         },
+                        
+                        ]};
+                        
+                        
+    } 
+    if (localStorage["myJson"]=="STIC") {
+    
+                            var json = {
+                            
+                               pages: [
+                            
+                                   {
+                                       questions: [
+                                           
+                                           {
+                                               "type": "imagepicker",
+                                               "name": "q1",
+                                               "isRequired": true,
+                                               "title": "Quality of Human Resource Unit Services",
+                                               "choices": [
+                                                   {
+                                                       "value": "1",
+                                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                   }, {
+                                                       "value": "2",
+                                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                   }, {
+                                                       "value": "3",
+                                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                  }, {
+                                                       "value": "4",
+                                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                 }, {
+                                                       "value": "5",
+                                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                },
+                                               ]
+                                           },
+                            
+                                       ],
+                            
+                                   },
+                                    {  
+                                   questions : [
+                            
+                                    {
+                                        "type": "imagepicker",
+                                        "name": "q2",
+                                        "isRequired": true,
+                                           "title": "Efficiency of the Human Resource Unit Service",
+                                        "choices": [
+                                            {
+                                                "value": "1",
+                                                "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                            }, {
+                                                "value": "2",
+                                                "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                            }, {
+                                                "value": "3",
+                                                "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                           }, {
+                                                "value": "4",
+                                                "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                          }, {
+                                                "value": "5",
+                                                "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                         },
+                                        ]
+                                    },
+                            
+                                   ]
+                                },
+                                   {
+                                     questions: [
+                               
+                                        {
+                                           "type": "imagepicker",
+                                           "name": "q3",
+                                           "isRequired": true,
+                                           "title": "Timeliness of Delivery of services",
+                                           "choices": [
+                                               {
+                                                   "value": "1",
+                                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                               }, {
+                                                   "value": "2",
+                                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                               }, {
+                                                   "value": "3",
+                                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                              }, {
+                                                   "value": "4",
+                                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                             }, {
+                                                   "value": "5",
+                                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                            },
+                                           ]
+                                       },
+                            
+                                 ]
+                             },
+                                   {
+                                     questions: [
+                               
+                                        {
+                                           "type": "imagepicker",
+                                           "name": "q4",
+                                           "isRequired": true,
+                                           "title": "Attitude of staff handling your needs",
+                                           "choices": [
+                                               {
+                                                   "value": "1",
+                                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                               }, {
+                                                   "value": "2",
+                                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                               }, {
+                                                   "value": "3",
+                                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                              }, {
+                                                   "value": "4",
+                                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                             }, {
+                                                   "value": "5",
+                                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                            },
+                                           ]
+                                       },
+                                 ]
+                             }, 
+                             {
+                                questions: [
+                            
+                                   {
+                                      "type": "imagepicker",
+                                      "name": "q5",
+                                      "isRequired": true,
+                                      "title": "Over-all Satisfaction",
+                                      "choices": [
+                                          {
+                                              "value": "1",
+                                              "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                          }, {
+                                              "value": "2",
+                                              "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                          }, {
+                                              "value": "3",
+                                              "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                         }, {
+                                              "value": "4",
+                                              "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                        }, {
+                                              "value": "5",
+                                              "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                       },
+                                      ]
+                                    },
+                                ]
+                             },
+                            
+                             {
+                                questions: [
+                            
+                                 {
+                                    "type":"text",
+                                    "name":"Name",
+                                    "value":"ddada",
+                                    
+                                 },
+                                 {
+                                    "type":"comment",
+                                    "name":"Remarks",
+                                    "value":"dadad",
+                                 }
+                            
+                                ]   
+                             },
+                            
+                            ]};
+                            
+                            
+    }                        
+    if (localStorage["myJson"]=="FOS-ZC") {
+    
+                                var json = {
+                                
+                                   pages: [
+                                
+                                       {
+                                           questions: [
+                                               
+                                               {
+                                                   "type": "imagepicker",
+                                                   "name": "q1",
+                                                   "isRequired": true,
+                                                   "title": "Quality of Human Resource Unit Services",
+                                                   "choices": [
+                                                       {
+                                                           "value": "1",
+                                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                       }, {
+                                                           "value": "2",
+                                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                       }, {
+                                                           "value": "3",
+                                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                      }, {
+                                                           "value": "4",
+                                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                     }, {
+                                                           "value": "5",
+                                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                    },
+                                                   ]
+                                               },
+                                
+                                           ],
+                                
+                                       },
+                                        {  
+                                       questions : [
+                                
+                                        {
+                                            "type": "imagepicker",
+                                            "name": "q2",
+                                            "isRequired": true,
+                                               "title": "Efficiency of the Human Resource Unit Service",
+                                            "choices": [
+                                                {
+                                                    "value": "1",
+                                                    "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                }, {
+                                                    "value": "2",
+                                                    "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                }, {
+                                                    "value": "3",
+                                                    "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                               }, {
+                                                    "value": "4",
+                                                    "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                              }, {
+                                                    "value": "5",
+                                                    "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                             },
+                                            ]
+                                        },
+                                
+                                       ]
+                                    },
+                                       {
+                                         questions: [
+                                   
+                                            {
+                                               "type": "imagepicker",
+                                               "name": "q3",
+                                               "isRequired": true,
+                                               "title": "Timeliness of Delivery of services",
+                                               "choices": [
+                                                   {
+                                                       "value": "1",
+                                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                   }, {
+                                                       "value": "2",
+                                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                   }, {
+                                                       "value": "3",
+                                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                  }, {
+                                                       "value": "4",
+                                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                 }, {
+                                                       "value": "5",
+                                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                },
+                                               ]
+                                           },
+                                
+                                     ]
+                                 },
+                                       {
+                                         questions: [
+                                   
+                                            {
+                                               "type": "imagepicker",
+                                               "name": "q4",
+                                               "isRequired": true,
+                                               "title": "Attitude of staff handling your needs",
+                                               "choices": [
+                                                   {
+                                                       "value": "1",
+                                                       "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                   }, {
+                                                       "value": "2",
+                                                       "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                   }, {
+                                                       "value": "3",
+                                                       "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                  }, {
+                                                       "value": "4",
+                                                       "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                 }, {
+                                                       "value": "5",
+                                                       "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                },
+                                               ]
+                                           },
+                                     ]
+                                 }, 
+                                 {
+                                    questions: [
+                                
+                                       {
+                                          "type": "imagepicker",
+                                          "name": "q5",
+                                          "isRequired": true,
+                                          "title": "Over-all Satisfaction",
+                                          "choices": [
+                                              {
+                                                  "value": "1",
+                                                  "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                              }, {
+                                                  "value": "2",
+                                                  "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                              }, {
+                                                  "value": "3",
+                                                  "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                             }, {
+                                                  "value": "4",
+                                                  "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                            }, {
+                                                  "value": "5",
+                                                  "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                           },
+                                          ]
+                                        },
+                                    ]
+                                 },
+                                
+                                 {
+                                    questions: [
+                                
+                                     {
+                                        "type":"text",
+                                        "name":"Name",
+                                        "value":"ddada",
+                                        
+                                     },
+                                     {
+                                        "type":"comment",
+                                        "name":"Remarks",
+                                        "value":"dadad",
+                                     }
+                                
+                                    ]   
+                                 },
+                                
+                                ]};
+                                
+                                
+    }
+    if (localStorage["myJson"]=="PSTC-ZDS") {
+    
+                                    var json = {
+                                    
+                                       pages: [
+                                    
+                                           {
+                                               questions: [
+                                                   
+                                                   {
+                                                       "type": "imagepicker",
+                                                       "name": "q1",
+                                                       "isRequired": true,
+                                                       "title": "Quality of Human Resource Unit Services",
+                                                       "choices": [
+                                                           {
+                                                               "value": "1",
+                                                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                           }, {
+                                                               "value": "2",
+                                                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                           }, {
+                                                               "value": "3",
+                                                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                          }, {
+                                                               "value": "4",
+                                                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                         }, {
+                                                               "value": "5",
+                                                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                        },
+                                                       ]
+                                                   },
+                                    
+                                               ],
+                                    
+                                           },
+                                            {  
+                                           questions : [
+                                    
+                                            {
+                                                "type": "imagepicker",
+                                                "name": "q2",
+                                                "isRequired": true,
+                                                   "title": "Efficiency of the Human Resource Unit Service",
+                                                "choices": [
+                                                    {
+                                                        "value": "1",
+                                                        "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                    }, {
+                                                        "value": "2",
+                                                        "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                    }, {
+                                                        "value": "3",
+                                                        "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                   }, {
+                                                        "value": "4",
+                                                        "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                  }, {
+                                                        "value": "5",
+                                                        "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                 },
+                                                ]
+                                            },
+                                    
+                                           ]
+                                        },
+                                           {
+                                             questions: [
+                                       
+                                                {
+                                                   "type": "imagepicker",
+                                                   "name": "q3",
+                                                   "isRequired": true,
+                                                   "title": "Timeliness of Delivery of services",
+                                                   "choices": [
+                                                       {
+                                                           "value": "1",
+                                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                       }, {
+                                                           "value": "2",
+                                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                       }, {
+                                                           "value": "3",
+                                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                      }, {
+                                                           "value": "4",
+                                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                     }, {
+                                                           "value": "5",
+                                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                    },
+                                                   ]
+                                               },
+                                    
+                                         ]
+                                     },
+                                           {
+                                             questions: [
+                                       
+                                                {
+                                                   "type": "imagepicker",
+                                                   "name": "q4",
+                                                   "isRequired": true,
+                                                   "title": "Attitude of staff handling your needs",
+                                                   "choices": [
+                                                       {
+                                                           "value": "1",
+                                                           "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                       }, {
+                                                           "value": "2",
+                                                           "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                       }, {
+                                                           "value": "3",
+                                                           "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                      }, {
+                                                           "value": "4",
+                                                           "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                     }, {
+                                                           "value": "5",
+                                                           "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                                    },
+                                                   ]
+                                               },
+                                         ]
+                                     }, 
+                                     {
+                                        questions: [
+                                    
+                                           {
+                                              "type": "imagepicker",
+                                              "name": "q5",
+                                              "isRequired": true,
+                                              "title": "Over-all Satisfaction",
+                                              "choices": [
+                                                  {
+                                                      "value": "1",
+                                                      "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                                                  }, {
+                                                      "value": "2",
+                                                      "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                                                  }, {
+                                                      "value": "3",
+                                                      "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                                                 }, {
+                                                      "value": "4",
+                                                      "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                                                }, {
+                                                      "value": "5",
+                                                      "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                                               },
+                                              ]
+                                            },
+                                        ]
+                                     },
+                                    
+                                     {
+                                        questions: [
+                                    
+                                         {
+                                            "type":"text",
+                                            "name":"Name",
+                                            "value":"ddada",
+                                            
+                                         },
+                                         {
+                                            "type":"comment",
+                                            "name":"Remarks",
+                                            "value":"dadad",
+                                         }
+                                    
+                                        ]   
+                                     },
+                                    
+                                    ]};
+                                    
+                                    
+    }   
+    if (localStorage["myJson"]=="PSTC-ZDN") {
+    
+        var json = {
+        
+           pages: [
+        
+               {
+                   questions: [
+                       
+                       {
+                           "type": "imagepicker",
+                           "name": "q1",
+                           "isRequired": true,
+                           "title": "Quality of Human Resource Unit Services",
+                           "choices": [
+                               {
+                                   "value": "1",
+                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                               }, {
+                                   "value": "2",
+                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                               }, {
+                                   "value": "3",
+                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                              }, {
+                                   "value": "4",
+                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                             }, {
+                                   "value": "5",
+                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                            },
+                           ]
+                       },
+        
+                   ],
+        
+               },
+                {  
+               questions : [
+        
+                {
+                    "type": "imagepicker",
+                    "name": "q2",
+                    "isRequired": true,
+                       "title": "Efficiency of the Human Resource Unit Service",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                        }, {
+                            "value": "2",
+                            "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                       }, {
+                            "value": "4",
+                            "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                      }, {
+                            "value": "5",
+                            "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                     },
+                    ]
+                },
+        
+               ]
+            },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q3",
+                       "isRequired": true,
+                       "title": "Timeliness of Delivery of services",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+        
+             ]
+         },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q4",
+                       "isRequired": true,
+                       "title": "Attitude of staff handling your needs",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+             ]
+         }, 
+         {
+            questions: [
+        
+               {
+                  "type": "imagepicker",
+                  "name": "q5",
+                  "isRequired": true,
+                  "title": "Over-all Satisfaction",
+                  "choices": [
+                      {
+                          "value": "1",
+                          "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                      }, {
+                          "value": "2",
+                          "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                      }, {
+                          "value": "3",
+                          "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                     }, {
+                          "value": "4",
+                          "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                    }, {
+                          "value": "5",
+                          "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                   },
+                  ]
+                },
+            ]
+         },
+        
+         {
+            questions: [
+        
+             {
+                "type":"text",
+                "name":"Name",
+                "value":"ddada",
+                
+             },
+             {
+                "type":"comment",
+                "name":"Remarks",
+                "value":"dadad",
+             }
+        
+            ]   
+         },
+        
+        ]};
+        
+        
+    }  
+    if (localStorage["myJson"]=="PSTC-ZS") {
+    
+        var json = {
+        
+           pages: [
+        
+               {
+                   questions: [
+                       
+                       {
+                           "type": "imagepicker",
+                           "name": "q1",
+                           "isRequired": true,
+                           "title": "Quality of Human Resource Unit Services",
+                           "choices": [
+                               {
+                                   "value": "1",
+                                   "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                               }, {
+                                   "value": "2",
+                                   "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                               }, {
+                                   "value": "3",
+                                   "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                              }, {
+                                   "value": "4",
+                                   "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                             }, {
+                                   "value": "5",
+                                   "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                            },
+                           ]
+                       },
+        
+                   ],
+        
+               },
+                {  
+               questions : [
+        
+                {
+                    "type": "imagepicker",
+                    "name": "q2",
+                    "isRequired": true,
+                       "title": "Efficiency of the Human Resource Unit Service",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                        }, {
+                            "value": "2",
+                            "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                        }, {
+                            "value": "3",
+                            "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                       }, {
+                            "value": "4",
+                            "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                      }, {
+                            "value": "5",
+                            "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                     },
+                    ]
+                },
+        
+               ]
+            },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q3",
+                       "isRequired": true,
+                       "title": "Timeliness of Delivery of services",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+        
+             ]
+         },
+               {
+                 questions: [
+           
+                    {
+                       "type": "imagepicker",
+                       "name": "q4",
+                       "isRequired": true,
+                       "title": "Attitude of staff handling your needs",
+                       "choices": [
+                           {
+                               "value": "1",
+                               "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                           }, {
+                               "value": "2",
+                               "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                           }, {
+                               "value": "3",
+                               "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                          }, {
+                               "value": "4",
+                               "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                         }, {
+                               "value": "5",
+                               "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                        },
+                       ]
+                   },
+             ]
+         }, 
+         {
+            questions: [
+        
+               {
+                  "type": "imagepicker",
+                  "name": "q5",
+                  "isRequired": true,
+                  "title": "Over-all Satisfaction",
+                  "choices": [
+                      {
+                          "value": "1",
+                          "imageLink": "../surveyscript/images/Scale_01_Edited.png",
+                      }, {
+                          "value": "2",
+                          "imageLink": "../surveyscript/images/Scale_02_Edited.png"
+                      }, {
+                          "value": "3",
+                          "imageLink": "../surveyscript/images/Scale_03_Edited.png"
+                     }, {
+                          "value": "4",
+                          "imageLink": "../surveyscript/images/Scale_04_Edited.png"
+                    }, {
+                          "value": "5",
+                          "imageLink": "../surveyscript/images/Scale_05_Edited.png"
+                   },
+                  ]
+                },
+            ]
+         },
+        
+         {
+            questions: [
+        
+             {
+                "type":"text",
+                "name":"Name",
+                "value":"ddada",
+                
+             },
+             {
+                "type":"comment",
+                "name":"Remarks",
+                "value":"dadad",
+             }
+        
+            ]   
+         },
+        
+        ]};
+        
+        
+    }      
