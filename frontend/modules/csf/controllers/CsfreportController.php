@@ -8,6 +8,7 @@ use common\models\csf\CsfreportSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use kartik\mpdf\Pdf;
 
 /**
  * CsfreportController implements the CRUD actions for Csfreport model.
@@ -54,8 +55,7 @@ class CsfreportController extends Controller
         ->bindValue(':paramName1' , $sd )
         ->bindValue(':paramName2', $ed)
         ->execute();
-
-        echo 'fsfssg';
+        return $pordetails;
     }
 
 
@@ -136,4 +136,49 @@ class CsfreportController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    function getunits($units_type)
+    {
+        $con = Yii::$app->db;
+        $sql = "SELECT * from tbl_csfreport WHERE units_type='".$units_type."'";
+        $units_details = $con->createCommand($sql)->queryAll();
+        return $units_details;
+    }
+
+    public function actionReportby()
+    {
+        $request = Yii::$app->request;
+        $units_type = $request->get('units_type');
+        $csfdetails = $this->getunits($units_type);
+        $con = Yii::$app->db;
+        $content = $this->renderPartial('_reportcsf', ['csfdetails' => $csfdetails]);
+        $pdf = new Pdf();
+        $pdf->format = [216,330];
+        $pdf->orientation = Pdf::ORIENT_LANDSCAPE;
+        //$pdf->format = Pdf::FORMAT_LEGAL;
+        $pdf->destination = Pdf::DEST_BROWSER;
+       /* $pdf->marginLeft=10;
+        $pdf->marginHeader=5;
+        $pdf->marginTop=55;
+        $pdf->marginBottom=65;
+        $pdf->defaultFontSize=11;
+        */
+        $pdf->content = $content;
+        $pdf->cssFile = '@vendor/kartik-v/yii2-mpdf/assets/kv-mpdf-bootstrap.min.css';
+        $pdf->cssInline = '.kv-heading-1{font-size:18px}.nospace-border{border:0px;}.no-padding{ padding:0px;}.print-container{font-size:11px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif; }';
+        $headers='';
+        $LeftFooterContent = '';
+        $pdf->options = [
+            'title' => 'ABSTRACT OF BIDS',
+            'defaultheaderline' => 0,
+            'defaultfooterline' => 0,
+            'subject' => 'Report Abstract'];
+        $pdf->methods = [
+            'SetHeader' => [$headers],
+            'SetFooter' => [$LeftFooterContent],
+        ];
+
+        return $pdf->render();
+    }
+
 }
