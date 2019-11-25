@@ -151,21 +151,22 @@ class CsfreportController extends Controller
         $units_type = $request->get('units_type');
         $csfdetails = $this->getunits($units_type);
         $con = Yii::$app->db;
-        $content = $this->renderPartial('_reportcsf', ['csfdetails' => $csfdetails]);
-        $pdf = new Pdf();
+        return $this->renderAjax('_reportcsf', ['csfdetails' => $csfdetails]);
+        /* $pdf = new Pdf();
         $pdf->format = [216,330];
-        $pdf->orientation = Pdf::ORIENT_LANDSCAPE;
-        //$pdf->format = Pdf::FORMAT_LEGAL;
+        $pdf->orientation = Pdf::OR/IENT_LANDSCAPE;
+        $pdf->format = Pdf::FORMAT_LEGAL;
         $pdf->destination = Pdf::DEST_BROWSER;
-       /* $pdf->marginLeft=10;
+        $pdf->marginLeft=10;
         $pdf->marginHeader=5;
         $pdf->marginTop=55;
         $pdf->marginBottom=65;
         $pdf->defaultFontSize=11;
-        */
+        
         $pdf->content = $content;
         $pdf->cssFile = '@vendor/kartik-v/yii2-mpdf/assets/kv-mpdf-bootstrap.min.css';
         $pdf->cssInline = '.kv-heading-1{font-size:18px}.nospace-border{border:0px;}.no-padding{ padding:0px;}.print-container{font-size:11px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif; }';
+        
         $headers='';
         $LeftFooterContent = '';
         $pdf->options = [
@@ -179,6 +180,7 @@ class CsfreportController extends Controller
         ];
 
         return $pdf->render();
+        */
     }
 
 }

@@ -168,6 +168,6 @@ $this->registerJsFile($BaseURL.'js/jquery.tabletojson.js');
     ?>
 
 <?= pdfprint\Pdfprint::widget([
-        'elementClass' => '.btn-pdfprint'
+        //'elementClass' => '.btn-pdfprint'
     ]); ?>
 </div>
