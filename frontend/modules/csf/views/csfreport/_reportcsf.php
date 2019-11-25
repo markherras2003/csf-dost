@@ -1,7 +1,5 @@
 <?php
- 
- $BaseURL = $GLOBALS['frontend_base_uri'];
-
+$BaseURL = $GLOBALS['frontend_base_uri'];
 
 ?>
 <!DOCTYPE html>  
@@ -20,55 +18,59 @@
  var data = google.visualization.arrayToDataTable([
      ['Question', 'Number'],
      <?php
-     $counter = 0;
-     foreach($csfdetails as $row)
-     {
-      $counter++;
-      if ($counter==1) {
-         $reports=$row["report_questions"];
-        echo "['Outstanding', ".$row["outstanding"]."],";
-        echo "['Very Satisfactory', ".$row["verysatisfactory"]."],";
-        echo "['Satisfactory', ".$row["satisfactory"]."],";
-        echo "['Unsatisfactory', ".$row["unsatisfactory"]."],";
-        echo "['Poor', ".$row["poor"]."]";
-         //echo "['Outstanding',".$row['outstanding']."],";
-      }  
-     }
-     ?>
+$counter = 0;
+foreach ($csfdetails as $row)
+{
+    $counter++;
+    if ($counter == 1)
+    {
+        $reports = $row["report_questions"];
+        echo "['Outstanding', " . $row["outstanding"] . "],";
+        echo "['Very Satisfactory', " . $row["verysatisfactory"] . "],";
+        echo "['Satisfactory', " . $row["satisfactory"] . "],";
+        echo "['Unsatisfactory', " . $row["unsatisfactory"] . "],";
+        echo "['Poor', " . $row["poor"] . "]";
+        //echo "['Outstanding',".$row['outstanding']."],";
+        
+    }
+}
+?>
     ]);
 
     var options = {
-    title: <?= "'".$reports."'"; ?>,
+    title: <?="'" . $reports . "'"; ?>,
     pieHole: 1,
           pieSliceTextStyle: {
             color: 'black',
           },
-          legend: '',
+          legend: '', sliceVisibilityThreshold:0,
           
       };
 
     var data2 = google.visualization.arrayToDataTable([
      ['Question', 'Number'],
      <?php
-     $counter = 0;
-     foreach($csfdetails as $row)
-     {
-      $counter++;
-      if ($counter==2) {
-         $reports=$row["report_questions"];
-        echo "['Outstanding', ".$row["outstanding"]."],";
-        echo "['Very Satisfactory', ".$row["verysatisfactory"]."],";
-        echo "['Satisfactory', ".$row["satisfactory"]."],";
-        echo "['Unsatisfactory', ".$row["unsatisfactory"]."],";
-        echo "['Poor', ".$row["poor"]."]";
-         //echo "['Outstanding',".$row['outstanding']."],";
-      }  
-     }
-     ?>
+$counter = 0;
+foreach ($csfdetails as $row)
+{
+    $counter++;
+    if ($counter == 2)
+    {
+        $reports = $row["report_questions"];
+        echo "['Outstanding', " . $row["outstanding"] . "],";
+        echo "['Very Satisfactory', " . $row["verysatisfactory"] . "],";
+        echo "['Satisfactory', " . $row["satisfactory"] . "],";
+        echo "['Unsatisfactory', " . $row["unsatisfactory"] . "],";
+        echo "['Poor', " . $row["poor"] . "]";
+        //echo "['Outstanding',".$row['outstanding']."],";
+        
+    }
+}
+?>
     ]);
 
       var options2 = {
-      title: <?= "'".$reports."'"; ?>,
+      title: <?="'" . $reports . "'"; ?>,
       pieHole: 1,
                pieSliceTextStyle: {
                   color: 'black',
@@ -82,25 +84,27 @@
     var data3 = google.visualization.arrayToDataTable([
      ['Question', 'Number'],
      <?php
-     $counter = 0;
-     foreach($csfdetails as $row)
-     {
-      $counter++;
-      if ($counter==3) {
-         $reports=$row["report_questions"];
-        echo "['Outstanding', ".$row["outstanding"]."],";
-        echo "['Very Satisfactory', ".$row["verysatisfactory"]."],";
-        echo "['Satisfactory', ".$row["satisfactory"]."],";
-        echo "['Unsatisfactory', ".$row["unsatisfactory"]."],";
-        echo "['Poor', ".$row["poor"]."]";
-         //echo "['Outstanding',".$row['outstanding']."],";
-      }  
-     }
-     ?>
+$counter = 0;
+foreach ($csfdetails as $row)
+{
+    $counter++;
+    if ($counter == 3)
+    {
+        $reports = $row["report_questions"];
+        echo "['Outstanding', " . $row["outstanding"] . "],";
+        echo "['Very Satisfactory', " . $row["verysatisfactory"] . "],";
+        echo "['Satisfactory', " . $row["satisfactory"] . "],";
+        echo "['Unsatisfactory', " . $row["unsatisfactory"] . "],";
+        echo "['Poor', " . $row["poor"] . "]";
+        //echo "['Outstanding',".$row['outstanding']."],";
+        
+    }
+}
+?>
     ]);
 
       var options3= {
-      title: <?= "'".$reports."'"; ?>,
+      title: <?="'" . $reports . "'"; ?>,
       pieHole: 1,
                pieSliceTextStyle: {
                   color: 'black',
@@ -113,25 +117,27 @@
       var data4 = google.visualization.arrayToDataTable([
      ['Question', 'Number'],
      <?php
-     $counter = 0;
-     foreach($csfdetails as $row)
-     {
-      $counter++;
-      if ($counter==4) {
-         $reports=$row["report_questions"];
-        echo "['Outstanding', ".$row["outstanding"]."],";
-        echo "['Very Satisfactory', ".$row["verysatisfactory"]."],";
-        echo "['Satisfactory', ".$row["satisfactory"]."],";
-        echo "['Unsatisfactory', ".$row["unsatisfactory"]."],";
-        echo "['Poor', ".$row["poor"]."]";
-         //echo "['Outstanding',".$row['outstanding']."],";
-      }  
-     }
-     ?>
+$counter = 0;
+foreach ($csfdetails as $row)
+{
+    $counter++;
+    if ($counter == 4)
+    {
+        $reports = $row["report_questions"];
+        echo "['Outstanding', " . $row["outstanding"] . "],";
+        echo "['Very Satisfactory', " . $row["verysatisfactory"] . "],";
+        echo "['Satisfactory', " . $row["satisfactory"] . "],";
+        echo "['Unsatisfactory', " . $row["unsatisfactory"] . "],";
+        echo "['Poor', " . $row["poor"] . "]";
+        //echo "['Outstanding',".$row['outstanding']."],";
+        
+    }
+}
+?>
     ]);
 
       var options4= {
-      title: <?= "'".$reports."'"; ?>,
+      title: <?="'" . $reports . "'"; ?>,
       pieHole: 1,
                pieSliceTextStyle: {
                   color: 'black',
@@ -145,25 +151,27 @@
       var data5 = google.visualization.arrayToDataTable([
      ['Question', 'Number'],
      <?php
-     $counter = 0;
-     foreach($csfdetails as $row)
-     {
-      $counter++;
-      if ($counter==5) {
-         $reports=$row["report_questions"];
-        echo "['Outstanding', ".$row["outstanding"]."],";
-        echo "['Very Satisfactory', ".$row["verysatisfactory"]."],";
-        echo "['Satisfactory', ".$row["satisfactory"]."],";
-        echo "['Unsatisfactory', ".$row["unsatisfactory"]."],";
-        echo "['Poor', ".$row["poor"]."]";
-         //echo "['Outstanding',".$row['outstanding']."],";
-      }  
-     }
-     ?>
+$counter = 0;
+foreach ($csfdetails as $row)
+{
+    $counter++;
+    if ($counter == 5)
+    {
+        $reports = $row["report_questions"];
+        echo "['Outstanding', " . $row["outstanding"] . "],";
+        echo "['Very Satisfactory', " . $row["verysatisfactory"] . "],";
+        echo "['Satisfactory', " . $row["satisfactory"] . "],";
+        echo "['Unsatisfactory', " . $row["unsatisfactory"] . "],";
+        echo "['Poor', " . $row["poor"] . "]";
+        //echo "['Outstanding',".$row['outstanding']."],";
+        
+    }
+}
+?>
     ]);
 
       var options5= {
-      title: <?= "'".$reports."'"; ?>,
+      title: <?="'" . $reports . "'"; ?>,
       pieHole: 1,
                pieSliceTextStyle: {
                   color: 'black',
@@ -188,11 +196,12 @@
     </head> 
 <body>
 <?php
-$counter=0;
-   foreach ($csfdetails as $cs) {
-       $units = $cs["units_type"];
-       $counter++;
-   }
+$counter = 0;
+foreach ($csfdetails as $cs)
+{
+    $units = $cs["units_type"];
+    $counter++;
+}
 ?>
 
  
@@ -205,8 +214,8 @@ $counter=0;
 <td style="text-align: center; width: 92.9432%;" colspan="6">SUMMARY REPORT FOR</td>
 </tr>
 <tr>
-<td style="width: 50%; text-align: left;" colspan="3">Unit: <?= $units; ?></td>
-<td style="width: 50%;" colspan="3">&nbsp;No. of Respondent <?= $counter; ?></td>
+<td style="width: 50%; text-align: left;" colspan="3">Unit: <?=$units; ?></td>
+<td style="width: 50%;" colspan="3">&nbsp;No. of Respondent <?=$counter; ?></td>
 </tr>
 <tr>
 <td style="width: 16.67%; text-align: center;">Attributes</td>
@@ -217,22 +226,22 @@ $counter=0;
 <td style="width: 16.67%; text-align: center;">Poor</td>
 </tr>
 
-<?php 
-   $x=0;
-   foreach ($csfdetails as $cs) {?>
+<?php
+$x = 0;
+foreach ($csfdetails as $cs)
+{ ?>
 
 <tr>
-<td style="width: 25%; text-align: left;"><?= $cs["report_questions"] ?></td>
-<td style="width: 15%; text-align: center;"><?= $cs["outstanding"] ?></td>
-<td style="width: 15%; text-align: center;"><?= $cs["verysatisfactory"] ?></td>
-<td style="width: 15%; text-align: center;"><?= $cs["satisfactory"] ?></td>
-<td style="width: 15%; text-align: center;"><?= $cs["unsatisfactory"] ?></td>
-<td style="width: 15%; text-align: center;"><?= $cs["poor"] ?></td>
-</tr>
-
-
+<td style="width: 25%; text-align: left;"><?=$cs["report_questions"] ?></td>
+<td style="width: 15%; text-align: center;"><?=$cs["outstanding"] ?></td>
+<td style="width: 15%; text-align: center;"><?=$cs["verysatisfactory"] ?></td>
+<td style="width: 15%; text-align: center;"><?=$cs["satisfactory"] ?></td>
+<td style="width: 15%; text-align: center;"><?=$cs["unsatisfactory"] ?></td>
+<td style="width: 15%; text-align: center;"><?=$cs["poor"] ?></td>
+</tr> 
    
-<?php } ?>
+<?php
+} ?>
 
 </tbody>
 </table>
@@ -254,16 +263,136 @@ $counter=0;
       </table>
 <div style="height:25px"></div>
 <table>
-<?php 
-   $x=0;
-   foreach ($commentdetails as $comment) {?>
+
+
+<table border="1" style="border-collapse:collapse;width:100%;">
+      <tr>
+         <td>Total Number of Oustanding:</td>
+         <?php
+$totoutstanding = 0;
+foreach ($csfdetails as $cs)
+{
+    $totoutstanding = $totoutstanding + $cs["outstanding"];
+    echo '<td style="text-align:center;">' . $cs["outstanding"] . '</td>';
+?>
+
+<?php
+} ?>
+         <td style="text-align:center;"><?=$totoutstanding; ?></td>
+         <?php
+$totoutstanding = 0;
+$totpercent = 0;
+$counts = 0;
+foreach ($csfdetails as $cs)
+{
+    $counts++;
+    $outstanding = $cs["outstanding"];
+    $verysatisfactory = $cs["verysatisfactory"];
+    if ($verysatisfactory == 0)
+    {
+        $percentage = ($outstanding) / ($outstanding) * 100;
+    }
+    else
+    {
+        $percentage = ($outstanding) / ($outstanding + $verysatisfactory) * 100;
+    }
+    $totpercent = $totpercent + $percentage;
+
+    echo '<td style="text-align:center;">' . number_format($percentage, 2) . '%</td>';
+?>
+<?php
+} ?>
+     <td style="text-align:center;"><?=number_format($totpercent / $counts, 2) . '%'; ?>
+      </tr>
+      <tr>
+         <td>Total Number of Very Satisfactory:</td>
+         <?php
+$totverysatisfactory = 0;
+foreach ($csfdetails as $cs)
+{
+    $totverysatisfactory = $totverysatisfactory + $cs["verysatisfactory"];
+    echo '<td style="text-align:center;">' . $cs["verysatisfactory"] . '</td>';
+?>
+
+<?php
+} ?>
+         <td style="text-align:center;"><?=$totverysatisfactory; ?></td>
+         <?php
+$totoutstanding = 0;
+$totpercent = 0;
+$counts = 0;
+foreach ($csfdetails as $cs)
+{
+    $counts++;
+    $outstanding = $cs["outstanding"];
+    $verysatisfactory = $cs["verysatisfactory"];
+    if ($verysatisfactory == 0)
+    {
+        $percentage = 0;
+    }
+    else
+    {
+        $percentage = ($verysatisfactory) / ($outstanding + $verysatisfactory) * 100;
+    }
+    $totpercent = $totpercent + $percentage;
+
+    echo '<td style="text-align:center;">' . number_format($percentage, 2) . '%</td>';
+} ?>
+     <td style="text-align:center;"><?=number_format($totpercent / $counts, 2) . '%'; ?>
+      </tr>
+      <tr>
+         <td colspan="6" style="text-align:center;">Over-all Satisfaction Rating:</td>
+         <?php
+$totalcounts = 0;
+$totoutstanding = 0;
+$totverysatisfactory = 0;
+foreach ($csfdetails as $cs)
+{
+    $totoutstanding = $totoutstanding + $cs["outstanding"];
+    $totverysatisfactory = $totverysatisfactory + $cs["verysatisfactory"];
+    $totalcounts = $totoutstanding + $totverysatisfactory;
+}
+?>
+         <td style="text-align:center;"><?=$totalcounts; ?></td>
+         <?php
+$totoutstanding = 0;
+$totpercent = 0;
+$counts = 0;
+foreach ($csfdetails as $cs)
+{
+    $counts++;
+    $outstanding = $cs["outstanding"];
+    $verysatisfactory = $cs["verysatisfactory"];
+    if ($verysatisfactory == 0 and $outstanding == 0)
+    {
+        $percentage = 0;
+    }
+    else
+    {
+        $percentage = 100;
+    }
+
+    echo '<td style="text-align:center;">' . number_format($percentage, 2) . '%</td>';
+} ?> 
+    <td style="text-align:center;"><?=number_format($percentage, 2) . '%'; ?>
+      </tr>
+</table>
+
+<h4>Comment/Suggestions</h4>
+
+<table border="1" width="100%">
+<?php
+$x = 0;
+foreach ($commentdetails as $comment)
+{ ?>
 
 <tr>
-<td style"border: 2px solid;"><?= $comment["rating_comment"];?></td>
+<td style"border: 2px solid;"><?=$comment["rating_comment"]; ?></td>
 </tr>
 
-<?php }
+<?php
+}
 ?>
 </table>
 </body>
-</html>  
+</html>

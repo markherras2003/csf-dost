@@ -15,6 +15,7 @@ use yii\db\Query;
 use dosamigos\ckeditor\CKEditor;
 
 $BaseURL = $GLOBALS['frontend_base_uri'];
+
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\procurement\PurchaserequestSearch */
 /* @var $model common\models\procurement\Lineitembudget */

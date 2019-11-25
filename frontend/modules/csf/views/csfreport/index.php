@@ -65,7 +65,7 @@ $this->registerJsFile($BaseURL.'js/jquery.tabletojson.js');
         'bordered' => true,
         'striped' => true,
         'condensed' => true,
-        'responsive' => true,
+        'responsive' => true,   
         'hover' => true,
         'panel' => [
             'heading' => '',
@@ -138,7 +138,6 @@ $this->registerJsFile($BaseURL.'js/jquery.tabletojson.js');
             'hAlign' => 'center',
             'width' => '10%',
             ],
-
 
             [
 
