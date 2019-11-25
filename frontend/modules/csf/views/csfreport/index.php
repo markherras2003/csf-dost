@@ -150,7 +150,7 @@ $this->registerJsFile($BaseURL.'js/jquery.tabletojson.js');
                 'subGroupOf'=>1, // supplier column index is the parent group
                 'format'=>'raw',
                 'value' => function ($data) {
-                    return Html::a('<span class="glyphicon glyphicon-print"></span>', ['reportby?units_type='.$data["units_type"]], [
+                    return Html::a('<span class="glyphicon glyphicon-print"></span>', ['reportby?units_type='.$data["units_type"].'&&start_date='.$data["start_date"].'&&end_date='.$data["end_date"]], [
                         'class'=>'btn-pdfprint btn btn-primary',
                         'data-pjax'=>"0",
                         'pjax'=>"0",

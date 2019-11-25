@@ -145,13 +145,25 @@ class CsfreportController extends Controller
         return $units_details;
     }
 
+    function getcomment($units_type,$start_date,$end_date)
+    {
+        $con = Yii::$app->db;
+        $sql = "SELECT rating_comment FROM `tbl_csfrating` WHERE `tbl_csfrating`.`rating_date` BETWEEN '".$start_date."' AND '".$end_date."' AND `tbl_csfrating`.`unit_type`='".$units_type."'
+        AND rating_comment <> ''";
+        $units_details = $con->createCommand($sql)->queryAll();
+        return $units_details;
+    }
+
     public function actionReportby()
     {
         $request = Yii::$app->request;
         $units_type = $request->get('units_type');
+        $start_date = $request->get('start_date');
+        $end_date = $request->get('end_date');
         $csfdetails = $this->getunits($units_type);
+        $commentdetails = $this->getcomment($units_type,$start_date, $end_date);
         $con = Yii::$app->db;
-        return $this->renderAjax('_reportcsf', ['csfdetails' => $csfdetails]);
+        return $this->renderAjax('_reportcsf', ['csfdetails' => $csfdetails , 'commentdetails' => $commentdetails]);
         /* $pdf = new Pdf();
         $pdf->format = [216,330];
         $pdf->orientation = Pdf::OR/IENT_LANDSCAPE;

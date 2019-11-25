@@ -252,6 +252,18 @@ $counter=0;
             <td style="width:50%;border:1px solid;padding:10px;"><div id="columnchart16" style="width: 100%; height: 200px;"></div></td>
          </tr>
       </table>
+<div style="height:25px"></div>
+<table>
+<?php 
+   $x=0;
+   foreach ($commentdetails as $comment) {?>
 
+<tr>
+<td style"border: 2px solid;"><?= $comment["rating_comment"];?></td>
+</tr>
+
+<?php }
+?>
+</table>
 </body>
 </html>  
