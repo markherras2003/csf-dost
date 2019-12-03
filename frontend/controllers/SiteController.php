@@ -282,6 +282,13 @@ class SiteController extends Controller
             
     }
 
+    public function actionSurvey2()
+    {
+            $this->layout=false;
+            return $this->render('survey2.html');
+            
+    }
+
     
     public function actionStartsurvey()
     {

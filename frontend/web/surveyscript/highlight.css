@@ -1,124 +1,75 @@
-body {
-    background: white;
-    font-family: "Source Sans Pro", Helvetica, sans-serif!important;
-  }
-  
- .header-nav {
-     background: #3b5998;
-     height: 100px;
-     width: 100%;
-     z-index: 99999999999999999999999999999999;
-     position: sticky;
- }
+/*
+  IR_Black style (c) Vasily Mikhailitchenko <vaskas@programica.ru>
+*/
 
- .header-nav .logo {
-    position: relative;
-    padding: 25px;
- }
-
- .header-nav .logo img {
-    height: 48px;
-    width: 48px;
- }
-
- .header-nav .title {
-        color: #ffffff;
-        padding: 25px;
-        padding-left: 0px;
-        text-transform: uppercase;
- }
-  
-  /* The screen (or content) of the device */
-  .tablet .content {
-    position: absolute;
-    width: 100%;
-    background: white;
-    background-size: cover;
-  }
-
-  .tablet-content {
-      background: #f2f4f8;
-      position: relative;
-      padding-top: 50px;
-      padding-left: 5%;
-      padding-right: 5%;
-      text-align: center;
-
-      background: linear-gradient(to bottom, #74ABE2, #5563DE);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      text-decoration: none;
-      font-family: "Open Sans";
-  }
-
-  .table-content.row {
-    background: violet;
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #000;
+  color: #f8f8f8;
 }
 
-  .foot-border {
-    position: fixed;
-      background: #3b5998;
-      bottom: 0px;
-      display: block;
-      width:100%;
-      height: 50px;
-      padding:6px;
-      padding-left: 0px;  
-      color: #ffffff;
-      z-index: 99999999999999999999999999999;
-  }
-  div.title-message {
-      text-align: center;
-      color: #212121;
-      margin-top: -20px;
-  }
-
-  div.title-message h3 {
-    text-transform: uppercase;
-  }
-
-  div.card {
-    margin-bottom: 75px;
-  }
-
-  div.card::after {
-      margin-bottom: 0px;
-  }
-
-  div.card img {
-    border-radius: 15px;
-    width:128px;
-    height: 128px;
-  }
-
-
-  div.card img:hover {
-    cursor: pointer;
-    filter: grayscale(0%);
-    padding: 15px;
-    padding: 2px;
-    /*height: 148px;
-    width: 164px;*/
-    transform: scale(1.25); 
-    transition: transform .2s; /* Animation */
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7c7c7c;
 }
 
-
-div.alert.alert-danger {
-  background: none!important;
-  border:none;
-
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag,
+.hljs-name {
+  color: #96cbfe;
 }
 
-h5 span {
-  color: #212121;
-  font-size: 50px;
+.hljs-attribute,
+.hljs-selector-id {
+  color: #ffffb6;
 }
-span {
-  color: red;
-  font-size: 25px;
+
+.hljs-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition {
+  color: #a8ff60;
+}
+
+.hljs-subst {
+  color: #daefa3;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #e9c062;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-doctag {
+  color: #ffffb6;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-literal {
+  color: #c6c5fe;
+}
+
+.hljs-number,
+.hljs-deletion {
+  color:#ff73fd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
 }
 
 
