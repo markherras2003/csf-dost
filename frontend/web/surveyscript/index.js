@@ -7,12 +7,6 @@ jQuery(document).ready(function ($) {
     Survey.requiredError = "",
     Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
-    var dd = localStorage["myJson"];
-
-
-
-
-
 
      var json = {
     
@@ -291,6 +285,7 @@ jQuery(document).ready(function ($) {
      
     });
 
+ 
 
     var mycustomSurveyStrings = {
         pagePrevText: "Previous",
@@ -333,6 +328,9 @@ jQuery(document).ready(function ($) {
         
         Survey.surveyLocalization.locales["my"] = mycustomSurveyStrings;
         survey.locale = "my";
-    
+ 
+        
     
     });
+
+
